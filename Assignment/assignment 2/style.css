@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Alegreya Sans", sans-serif;
+}
+.home {
+  background-image: url(images/drew-coffman-1872.jpg);
+  background-size: 100% 100%;
+  height: 120vh;
+}
+.home .navbar {
+  overflow: hidden;
+}
+.home .navbar .logo img {
+  width: 30%;
+  margin: 30px 40px;
+}
+.home .navbar .logo {
+  width: 50%;
+  float: left;
+}
+.home .navbar .navs {
+  width: 50%;
+  float: left;
+}
+.home .navbar .navs ul {
+  float: right;
+  overflow: hidden;
+  list-style-type: none;
+}
+.home .navbar .navs ul li {
+  float: left;
+
+  margin: 20px;
+}
+.home .navbar .navs ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+.home .content {
+  text-align: center;
+  padding-top: 250px;
+  color: white;
+}
+.home .content .welcome {
+  font-size: 22px;
+}
+.home .content h1 {
+  font-size: 76px;
+}
+.home .content .title {
+  font-size: 24px;
+  margin: 10px 0px 20px;
+}
+.home .content button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+
+  padding: 15px 28px;
+}
+.home .content .btn1 {
+  background-color: burlywood;
+  margin: 0px 0px 12px;
+}
+
+.home .content .btn2 {
+  margin: 0px 0px 12px 12px;
+  border: 2px #fff solid;
+}
+.identification {
+  overflow: hidden;
+  padding: 90px 61.3333px 60px 61.6667px;
+  margin-top: 50px;
+}
+.identification .identification-image {
+  float: left;
+  width: 50%;
+}
+.identification .identification-image img {
+  width: 90%;
+}
+.identification .identification-description {
+  float: left;
+  width: 50%;
+}
+.identification .identification-description h2 {
+  font-size: 32px;
+}
+.identification .identification-description p {
+  padding-top: 30px;
+  font-size: 17px;
+}
+
+.identification .identification-description .icons {
+  overflow: hidden;
+  padding-top: 20px;
+}
+.identification .identification-description .icons .icon {
+  float: left;
+  border: #f2ce08 1px solid;
+  border-radius: 50%;
+}
+.identification .identification-description img {
+  height: 30px;
+  width: 30px;
+}
+.identification .identification-description .icons .icon span {
+  font-size: 17px;
+  color: #686868;
+}
+.location {
+  overflow: hidden;
+  color: #686868;
+  background-color: #f8f8f8;
+  margin: 0px -15px;
+  padding: 90px 61.3333px 90px 61.6667px;
+}
+.location .location-description {
+  width: 50%;
+  float: left;
+}
+.location .location-description h2 {
+  font-size: 32px;
+  margin: 0px 0px 25px;
+}
+.location .location-description p {
+  font-size: 17px;
+  margin: 0px 0px 20px;
+}
+.location .location-image {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+.location .location-image img {
+  width: 80%;
+}
+.baking {
+  overflow: hidden;
+  text-align: center;
+  font-size: 17px;
+  margin: 0px -15px;
+  padding: 70px 61.3333px 50px 61.6667px;
+}
+.baking h3 {
+  color: #303030;
+  font-size: 30px;
+}
+.baking .p-head {
+  color: #888888;
+  font-size: 17px;
+  margin: 17px 195.01px 0px 195px;
+}
+.baking .baking-item {
+  float: left;
+  width: 30%;
+
+  font-size: 17px;
+  padding: 0px 20px 0px 15px;
+}
+.baking .baking-item img {
+  width: 90%;
+}
+
+.baking .baking-item h4 {
+  color: #303030;
+  font-size: 22px;
+}
+.baking .baking-item p {
+  color: #686868;
+  font-size: 17px;
+  padding-top: 20px;
+}
+.baking .item {
+  padding-top: 50px;
+}
+.Contact {
+  overflow: hidden;
+  background-color: #f8f8f8;
+  margin: 0px -15px;
+  padding: 85px 61.3333px 85px 61.6667px;
+}
+.Contact .contact-location {
+  width: 50%;
+  float: left;
+}
+
+.Contact .contact-location iframe {
+  width: 100%;
+  height: 450px;
+  border: 0;
+}
+.Contact .Contact-information {
+  width: 50%;
+  float: left;
+}
+.Contact .Contact-information h2 {
+  font-size: 32px;
+  color: #303030;
+  margin: 0px 0px 25px;
+}
+.Contact .Contact-information p {
+  color: #686868;
+  font-size: 17px;
+}
+.Contact .Contact-information .contact-icons {
+  overflow: hidden;
+  padding-top: 20px;
+}
+.Contact .Contact-information .contact-icons .contact-icon {
+  float: left;
+  border: #f2ce08 1px solid;
+  border-radius: 50%;
+  background-color: burlywood;
+}
+.Contact .Contact-information .contact-icons .contact-icon img {
+  width: 30px;
+  height: 30px;
+}
+.Contact .Contact-information .contact-icons .contact-icon span {
+  font-size: 17px;
+  color: #686868;
+}
+.about {
+  overflow: hidden;
+  background-color: #403d38;
+}
+.about .aboutchild {
+  float: left;
+  width: 20%;
+  padding: 50px 15.9375px;
+}
+.about .aboutchild p {
+  color: #969696;
+  font-size: 16px;
+  margin: 0px 0px 20px;
+  padding: 30px 10px 0px;
+}
+.about .aboutchild h4 {
+  font-size: 18px;
+  margin: 0px 0px 25px;
+  color: #fff;
+}
+.about .aboutchild .Details .contact-icons {
+  overflow: hidden;
+  padding-top: 20px;
+}
+.about .aboutchild .Details .contact-icons .contact-icon {
+  float: left;
+
+  border-radius: 50%;
+}
+.about .aboutchild .Details .contact-icons .contact-icon img {
+  width: 30px;
+  height: 30px;
+}
+.about .aboutchild .Details .contact-icons span {
+  font-size: 17px;
+  color: #969696;
+}
+.about .aboutchild .Details .contact-icons a {
+  color: #969696;
+  text-decoration: none;
+}
+.about .aboutchild ul {
+  list-style-type: none;
+}
+
+.about .aboutchild ul li {
+  font-size: 16px;
+  color: #969696;
+  margin: 0px 0px 6px;
+  padding: 0px 0px 7px;
+}
+.about .aboutchild .Details .detmap {
+  background-image: url(images/contact-details-map.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.footer {
+  text-align: center;
+  background-color: #353330;
+  padding: 50px 0px 40px;
+}
+.footer .footerimage img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #403d38;
+}
+.footer p {
+  color: #777777;
+  font-size: 15px;
+  margin: 5px 0px 0px;
+  padding: 30px 0px;
+}
