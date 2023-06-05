@@ -1,0 +1,21 @@
+@media all and (max-width: 575px) {
+  .container .parent .child {
+    width: 100%;
+  }
+  .container .parent .child:nth-child(2) {
+    margin: auto;
+  }
+  .container {
+    width: 70%;
+    position: static;
+    transform: none;
+  }
+}
+@media all and (min-width: 576px) and (max-width: 767px) {
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+}
+@media all and (min-width: 992px) and (max-width: 1199px) {
+}
+@media all and (min-width: 1200px) {
+}

@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  position: relative;
+  background-color: rgb(233, 237, 239);
+}
+.container {
+  width: 70%;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+}
+.container .parent {
+  overflow: hidden;
+  padding: 40px 20px;
+  text-align: center;
+}
+.container .parent .child {
+  float: left;
+  width: calc((100% - 40px) / 3);
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #fff;
+  cursor: pointer;
+  transition: transform 0.5s;
+  margin-bottom: 20px;
+}
+.container .parent .child:hover {
+  transform: scale(1.2);
+}
+
+.container .parent .child:nth-child(2) {
+  margin: 0px 20px;
+}
+.container .parent .child h2 {
+  background-color: rgb(125, 208, 237);
+  padding-bottom: 10px;
+}
+.container .parent .child .price {
+  font-size: 30px;
+  font-weight: 700;
+  padding: 15px;
+}
+.container .parent .child .date {
+  padding: 15px;
+}
+.container .parent .child .spans span:nth-child(1),
+span:nth-child(3) {
+  width: 80%;
+}
+.container .parent .child .spans span:nth-child(2),
+span:nth-child(4) {
+  width: 70%;
+}
+.container .parent .child .spans span:nth-child(5) {
+  width: 90%;
+}
+.container .parent .child .spans span {
+  display: block;
+  height: 3px;
+  margin: 5px auto;
+  border-radius: 50px;
+  background-color: #ededed;
+}
+.progress {
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 5px;
+  width: 100%;
+  margin: auto;
+}
+.progress ul {
+  margin: 20px;
+}
+.progress ul li {
+  list-style: none;
+  padding: 10px;
+}
+.progress ul li h5:nth-child(1) {
+  float: left;
+}
+.progress ul li h5:nth-child(2) {
+  float: right;
+}
+.progress ul .progress-line {
+  width: 100%;
+  height: 5px;
+  margin-top: 5px;
+  border-radius: 50px;
+  background-color: #ededed;
+  transition: width 0.5s;
+}
+.parent .child:nth-child(1):hover ~ .progress ul .progress-line {
+  background-color: rgb(125, 208, 237);
+  width: 20%;
+}
+.parent .child:nth-child(2):hover ~ .progress ul .progress-line:nth-child(2) {
+  background-color: rgb(125, 208, 237);
+  width: 20%;
+}
+.parent .child:nth-child(2):hover ~ .progress ul .progress-line:nth-child(4) {
+  background-color: rgb(125, 208, 237);
+  width: 50%;
+}
+.parent .child:nth-child(2):hover ~ .progress ul .progress-line:nth-child(6) {
+  background-color: rgb(125, 208, 237);
+  width: 20%;
+}
+.parent .child:nth-child(3):hover ~ .progress ul .progress-line {
+  background-color: rgb(125, 208, 237);
+  width: 100%;
+}
