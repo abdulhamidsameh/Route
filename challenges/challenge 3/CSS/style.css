@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #cfd8dc;
+}
+.container {
+  margin: 20px auto;
+  width: 60%;
+}
+.container details {
+  background-color: #eceff1;
+  padding: 20px;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: #000 1px solid;
+  margin: 20px;
+}
+
+.container details summary {
+  font-size: 22;
+  font-weight: bold;
+  display: flex;
+  position: relative;
+}
+.container details[open] {
+  background-color: #fff;
+}
+.container details p {
+  padding-top: 10px;
+}
+.container details summary::after,
+summary::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: red;
+  right: 0;
+}
+.container details summary::before {
+  transform: translateY(-50%) rotate(90deg);
+}
+details[open] summary::before {
+  transform: translateY(-50%) rotate(0deg);
+}
