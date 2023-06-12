@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Amatic SC", cursive;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background-color: #000000;
+}
+/* Daniel Clifford */
+.Daniel-Clifford {
+  color: #ffffff;
+  background-color: #7541c8;
+  font-size: 13px;
+  padding: 30px;
+  border-radius: 10px;
+  margin: 10px;
+}
+header {
+  margin: 0px 0px 10px;
+  display: flex;
+}
+header img {
+  margin: 0px 10px 0px 0px;
+  border-radius: 50%;
+  border: #7541c8 3px solid;
+}
+header .title h1 {
+  font-size: 15px;
+  font-weight: 700;
+}
+header .title p {
+  font-size: 13px;
+}
+p:nth-child(2) {
+  font-size: 24px;
+  margin: 0px 0px 20px;
+  font-weight: 500;
+}
+p:nth-child(3) {
+  font-size: 15px;
+  margin: 0px 0px 20px;
+  font-weight: 500;
+}
+/* End Daniel Clifford */
+/* start Jonathan Walters */
+.Jonathan-Walters {
+  color: #ffffff;
+  background-color: #48556a;
+  font-size: 13px;
+  padding: 30px;
+  border-radius: 10px;
+  margin: 10px;
+}
+.daniel-jonathan {
+  display: flex;
+  margin: 30px;
+}
+/* End Jonathan Walters */
+/* start Jeanette Harmon */
+.Jeanette-Harmon {
+  color: #000000;
+  background-color: #ffffff;
+  font-size: 13px;
+  padding: 30px;
+  border-radius: 10px;
+  margin: 10px;
+}
+.Patrick-Abrahms {
+  color: #ffffff;
+  background-color: #19212e;
+  font-size: 13px;
+  padding: 30px;
+  border-radius: 10px;
+  margin: 10px;
+}
+.jeanette-patrick {
+  display: flex;
+  margin: 30px;
+}
+/* Kira Whittle */
+.Kira-Whittle {
+  color: #000000;
+  background-color: #ffffff;
+  font-size: 13px;
+  padding: 30px;
+  border-radius: 10px;
+  margin: 10px;
+  width: 20%;
+}
+.continer {
+  display: flex;
+}
+.right {
+  width: 80%;
+}
