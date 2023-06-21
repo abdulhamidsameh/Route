@@ -159,3 +159,32 @@
     width: 100%;
   }
 }
+/* Contact */
+@media screen and (max-width: 992px) {
+  .contact .input-group input {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contact .contact-means > div {
+    width: calc(calc(100% - var(--gap)) / 2);
+    width: 100%;
+  }
+}
+/* Footer */
+@media screen and (max-width: 1200px) {
+  footer :is(.about, .contact-details) {
+    width: calc(calc(100% - var(--gap) * 2) / 2);
+    order: 1;
+  }
+  footer .subsecription {
+    width: 100%;
+    order: 2;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer :is(.about, .contact-details, .subsecription) {
+    width: 100%;
+    order: 0;
+  }
+}

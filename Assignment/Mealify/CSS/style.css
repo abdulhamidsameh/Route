@@ -168,11 +168,11 @@ nav ul {
   gap: 1.875rem;
   transition: transform var(--animation-duration);
 }
-nav .logo {
+.logo {
   font-size: 1.875rem;
   font-family: var(--font-default);
 }
-nav .logo::after {
+.logo::after {
   content: ".";
   color: var(--color-primary);
 }
@@ -451,4 +451,205 @@ header picture img:hover {
 }
 .layer p {
   margin-top: 0.625rem;
+}
+/* Contact */
+.contact iframe {
+  width: 100%;
+  height: 21.875rem;
+}
+.contact .contact-means {
+  display: flex;
+  --gap: 0.7rem;
+  flex-wrap: wrap;
+  gap: var(--gap);
+  margin-block: 1.25rem;
+}
+.contact .contact-means > div {
+  width: calc(calc(100% - var(--gap)) / 2);
+  padding: 1.5625rem;
+  display: flex;
+  gap: 0.625rem;
+  background-color: hsl(
+    var(--light-hue),
+    var(--light-saturation),
+    calc(var(--light-lightness) - 5%)
+  );
+  align-items: center;
+}
+.contact .contact-means > div .icon {
+  width: 3.125rem;
+  height: 3.125rem;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+  align-items: center;
+  font-size: 1.375rem;
+  color: var(--color-light);
+}
+.contact .contact-means h3 {
+  color: #7d7d7d;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.3125rem;
+}
+.contact .contact-means h3 + * {
+  font-size: 1.0625rem;
+}
+.contact form {
+  --gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap);
+  background-color: var(--color-light);
+  box-shadow: 0 0 1.875rem #00000014;
+  padding: 1.25rem;
+}
+.contact form > *:not(button) {
+  width: 100%;
+}
+.contact .input-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+.contact .input-group input {
+  width: calc(calc(100% - var(--gap)) / 2);
+}
+.contact :is(input, textarea) {
+  padding: 0.9375rem;
+  font-family: inherit;
+  border: 0.125rem solid
+    hsl(
+      var(--light-hue),
+      calc(var(--light-saturation) + 10%),
+      calc(var(--light-lightness) - 10%)
+    );
+  transition: border-color var(--animation-duration);
+}
+.contact :is(input, textarea):focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+.contact textarea {
+  resize: vertical;
+  max-height: 21.875rem;
+  min-height: 9.375rem;
+}
+.contact .btn-main {
+  --border-radius: 100vh;
+  --padding: 0.9375rem 1.875rem;
+  --font-size: 1.125rem;
+  margin-top: 1.25rem;
+}
+/* Footer */
+footer {
+  color: #fff;
+  background-image: linear-gradient(#0009, #0009),
+    url(../img/textured-metal-background.jpg);
+  background-position: center center;
+  background-size: contain;
+}
+footer .container {
+  --gap: 1.25rem;
+  display: flex;
+  gap: var(--gap);
+  flex-wrap: wrap;
+}
+footer :is(.about, .contact-details) {
+  width: calc(calc(100% - var(--gap) * 2) / 4);
+}
+footer .subsecription {
+  width: calc(calc(100% - var(--gap) * 2) / 2);
+}
+footer .about > div {
+  display: flex;
+  gap: 0.625rem;
+  align-items: center;
+}
+footer .about img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+footer .about p {
+  line-height: 1.5;
+  margin-block: 0.625rem;
+  font-size: 1.0625rem;
+}
+footer .about h3 {
+  text-align: center;
+  border-bottom: 0.125rem solid #ddd6;
+  font-size: 1.25rem;
+  padding-block: 0.3125rem;
+  margin-block: 0.5rem;
+}
+footer .about ul {
+  display: flex;
+  justify-content: space-around;
+  padding-block: 0.625rem;
+}
+footer .about ul i {
+  font-size: 1.375rem;
+}
+footer .subsecription {
+  display: flex;
+  gap: 0.625rem;
+  flex-direction: column;
+}
+footer .subscription-box {
+  --gap: 0.625rem;
+  display: flex;
+  gap: var(--gap);
+}
+footer .subscription-box input {
+  flex-grow: 1;
+  padding: 0.625rem;
+}
+footer .subscription-box input:focus {
+  outline: none;
+}
+footer .subscription-box button {
+  min-width: 6.875rem;
+  border-radius: 0;
+}
+footer .quick-links ul {
+  --gap: 0.625rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0.625rem;
+  column-gap: var(--gap);
+}
+footer .quick-links ul li {
+  width: calc(calc(100% - var(--gap)) / 2);
+  padding: 0.5rem;
+  transition: transform var(--animation-duration),
+    background-color var(--animation-duration);
+}
+footer .quick-links ul li::before {
+  content: "\f054";
+  font: var(--fa-font-solid);
+}
+footer .quick-links ul li:hover {
+  background-color: #222;
+  transform: translateX(0.625rem);
+}
+footer .contact-details h2 {
+  margin-bottom: 0.9375rem;
+}
+footer .contact-details ul li {
+  display: flex;
+  gap: 0.625rem;
+  align-items: center;
+}
+footer .contact-details ul li i {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: var(--color-primary);
+  font-size: 1.375rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
