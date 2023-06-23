@@ -1,0 +1,219 @@
+/* Start Variables */
+:root {
+  --first-color: #000000;
+  --secondary-color: #10cab7;
+  --third-color: #f6f6f6;
+  --forth-color: #777777;
+  --fifth-color: #ebeced;
+  --six-color: #797979;
+  --seventh-color: #444444;
+}
+/* End Variables */
+/* Start Global Rules */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Work Sans", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* End Global Rules */
+/* Start Navbar */
+.navbar img {
+  width: 3.75rem;
+}
+/* End Navbar */
+/* Start Home Section */
+.header {
+  background-image: url(../img/landing.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+.header .title h1 {
+  font-size: 3.125rem;
+  line-height: 3.5938rem;
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+.header .title p {
+  color: var(--first-color);
+  font-size: 1.1875rem;
+  line-height: 2.1375rem;
+  margin: 1.1875rem 0rem;
+}
+/* End Home Section */
+/* Start Feedback Section */
+.feedback {
+  background-color: var(--third-color);
+}
+.feedback i {
+  color: var(--secondary-color);
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 3rem;
+}
+.feedback h3 {
+  color: var(--first-color);
+  font-size: 1.17rem;
+  line-height: 1.3455rem;
+  margin: 1.875rem 0rem;
+  font-weight: 800;
+}
+.feedback p {
+  color: var(--forth-color);
+  font-size: 1.0625rem;
+  line-height: 1.9125rem;
+  margin: 1.0625rem 0rem;
+}
+/* End Feedback Section */
+/* Start Services Section */
+.services .title h2 {
+  color: var(--fifth-color);
+  font-size: 6.25rem;
+  line-height: 7.1875rem;
+  letter-spacing: -0.1875rem;
+  font-weight: 800;
+}
+.services .title p {
+  color: var(--six-color);
+  font-size: 1.25rem;
+  line-height: 1.4375rem;
+  margin: -1.875rem 0rem 0rem;
+}
+.services .serv i {
+  color: var(--secondary-color);
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: 900;
+}
+.services .serv h3 {
+  color: var(--first-color);
+  font-size: 1.17rem;
+  line-height: 1.3455rem;
+  margin: 0rem 0rem 1.25rem;
+  font-weight: 700;
+}
+.services .serv p {
+  color: var(--seventh-color);
+  line-height: 1.6rem;
+  margin: 1rem 0rem;
+  font-weight: 300;
+}
+/* End Services Section */
+/* Start Portfolio Section */
+.Portfolio {
+  background-color: var(--third-color);
+}
+.Portfolio .title h2 {
+  color: var(--fifth-color);
+  font-size: 6.25rem;
+  line-height: 7.1875rem;
+  letter-spacing: -0.1875rem;
+  font-weight: 800;
+}
+.Portfolio .title p {
+  color: var(--six-color);
+  font-size: 1.25rem;
+  line-height: 1.4375rem;
+  margin: -1.875rem 0rem 0rem;
+}
+.Portfolio .disc h3 {
+  color: var(--first-color);
+  font-size: 1.17rem;
+  line-height: 1.3455rem;
+  font-weight: 700;
+}
+.Portfolio .disc p {
+  color: var(--forth-color);
+  line-height: 1.6rem;
+  margin: 1rem 0rem 0rem;
+}
+/* End Portfolio Section */
+/* Start About Section */
+.about .title h2 {
+  color: var(--fifth-color);
+  font-size: 6.25rem;
+  line-height: 7.1875rem;
+  letter-spacing: -0.1875rem;
+  font-weight: 800;
+}
+.about .title p {
+  color: var(--six-color);
+  font-size: 1.25rem;
+  line-height: 1.4375rem;
+  margin: -1.875rem 0rem 0rem;
+}
+.about .first-pragraph {
+  color: var(--first-color);
+  line-height: 2rem;
+  margin: 1rem 0rem 3.125rem;
+  font-weight: 700;
+}
+.about .first-pragraph::before {
+  content: "";
+  bottom: 0;
+  width: 50%;
+  background-color: var(--secondary-color);
+  height: 0.0625rem;
+  position: absolute;
+}
+.about .second-pragraph {
+  color: var(--forth-color);
+  line-height: 2rem;
+  margin: 1rem 0rem;
+}
+/* End About Section */
+/* Start Contact Section */
+.contact {
+  background-color: var(--third-color);
+}
+.contact .title h2 {
+  color: var(--fifth-color);
+  font-size: 6.25rem;
+  line-height: 7.1875rem;
+  letter-spacing: -0.1875rem;
+  font-weight: 800;
+}
+.contact .title p {
+  color: var(--six-color);
+  font-size: 1.25rem;
+  line-height: 1.4375rem;
+  margin: -1.875rem 0rem 0rem;
+}
+.contact .social p {
+  color: #2c4755;
+  font-size: 2.1875rem;
+  line-height: 2.5156rem;
+  letter-spacing: -0.125rem;
+  margin: 2.1875rem 0rem 0.9375rem;
+  font-weight: 800;
+}
+.contact .social a {
+  color: var(--secondary-color);
+  font-size: 2.1875rem;
+  line-height: 2.5156rem;
+  font-weight: 800;
+}
+.contact .social .icon {
+  color: var(--first-color);
+  line-height: 1.15rem;
+  margin: 1.25rem 0rem 0rem;
+}
+/* End Contact Section */
+/* Start Footer Section */
+footer {
+  background-color: #2c4755;
+  color: #ffffff;
+  font-size: 1.125rem;
+  line-height: 1.2937rem;
+  padding: 1.875rem 0.625rem;
+}
+footer span {
+  color: var(--secondary-color);
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.2937rem;
+}
+/* End Footer Section */
