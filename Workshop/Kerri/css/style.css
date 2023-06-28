@@ -1,0 +1,760 @@
+/* Start Variables */
+:root {
+  --first-font: "Montserrat", sans-serif;
+  --second-font: "Nunito", sans-serif;
+  --main-color: #e65f78;
+  --second-color: #212529;
+  --third-color: #6c757d;
+}
+/* End Variables */
+/* Start Global Style */
+body {
+  scroll-behavior: smooth;
+}
+/* End Global Style */
+/* Start Navbar */
+nav .container .links ul li a {
+  font-family: var(--second-font);
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.75px;
+  margin: 0px 7px;
+  padding: 8px;
+  font-weight: 500;
+}
+nav a.active {
+  color: var(--main-color) !important;
+}
+/* End Navbar */
+/* Start Home */
+.home {
+  background-image: url(../img/header-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+.home .overlay {
+  background-color: rgba(0, 0, 0, 0.69);
+}
+.home .overlay .title h4 {
+  font-family: var(--first-font);
+  font-size: 24px;
+  line-height: 28.8px;
+  margin: 0px 0px 24px;
+  font-weight: 500;
+}
+.home .overlay .title h1 {
+  font-family: var(--first-font);
+  font-size: 54px;
+  line-height: 64.8px;
+  font-weight: 500;
+}
+.home .overlay .title p {
+  font-family: var(--second-font);
+  line-height: 28.8px;
+  margin: 50px 150px;
+}
+.home .overlay .title a {
+  font-family: var(--second-font);
+  color: #fff;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.6px;
+  padding: 15px 32px;
+
+  font-weight: 700;
+  border: 2px solid #fff;
+  transition: background-color 1s;
+}
+.home .overlay .title a:hover {
+  color: #000;
+  background-color: #fff;
+}
+.home .overlay .title h1::after {
+  content: " |";
+  animation-name: typing;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  font-weight: 600;
+}
+@keyframes typing {
+  0% {
+    content: "K|";
+  }
+  1% {
+    content: "Ke|";
+  }
+  2% {
+    content: "Ker|";
+  }
+  3% {
+    content: "Kerr|";
+  }
+  4% {
+    content: "Kerri|";
+  }
+  5% {
+    content: "Kerri |";
+  }
+  6% {
+    content: "Kerri D|";
+  }
+  7% {
+    content: "Kerri De|";
+  }
+  8% {
+    content: "Kerri Deo|";
+  }
+  9% {
+    content: "Kerri Deo.|";
+  }
+  15% {
+    content: "Kerri Deo|";
+  }
+  10% {
+    content: "Kerri De|";
+  }
+  11% {
+    content: "Kerri D|";
+  }
+  12% {
+    content: "Kerri |";
+  }
+  13% {
+    content: "Kerri|";
+  }
+  14% {
+    content: "Kerr|";
+  }
+  15% {
+    content: "Ker|";
+  }
+  16% {
+    content: "Ke|";
+  }
+  27% {
+    content: "K|";
+  }
+  17% {
+    content: "|";
+  }
+  18% {
+    content: "A|";
+  }
+  19% {
+    content: "A |";
+  }
+  20% {
+    content: "A G|";
+  }
+  21% {
+    content: "A Gr|";
+  }
+  22% {
+    content: "A Gra|";
+  }
+  23% {
+    content: "A Grap|";
+  }
+  39% {
+    content: "A Graph|";
+  }
+  24% {
+    content: "A Graphi|";
+  }
+  25% {
+    content: "A Graphic|";
+  }
+  26% {
+    content: "A Graphic |";
+  }
+  27% {
+    content: "A Graphic D|";
+  }
+  28% {
+    content: "A Graphic De|";
+  }
+  29% {
+    content: "A Graphic Des|";
+  }
+  30% {
+    content: "A Graphic Desi|";
+  }
+  31% {
+    content: "A Graphic Desig|";
+  }
+  32% {
+    content: "A Graphic Design|";
+  }
+  33% {
+    content: "A Graphic Designe|";
+  }
+  34% {
+    content: "A Graphic Designer|";
+  }
+  35% {
+    content: "A Graphic Designer.|";
+  }
+  36% {
+    content: "A Graphic Designer|";
+  }
+  37% {
+    content: "A Graphic Designe|";
+  }
+  38% {
+    content: "A Graphic Design|";
+  }
+  39% {
+    content: "A Graphic Desig|";
+  }
+  40% {
+    content: "A Graphic Desi|";
+  }
+  41% {
+    content: "A Graphic Des|";
+  }
+
+  42% {
+    content: "A Graphic De|";
+  }
+  43% {
+    content: "A Graphic D|";
+  }
+  44% {
+    content: "A Graphic |";
+  }
+
+  45% {
+    content: "A Graphic|";
+  }
+  46% {
+    content: "A Graphi|";
+  }
+  47% {
+    content: "A Graph|";
+  }
+  48% {
+    content: "A Grap|";
+  }
+  49% {
+    content: "A Gra|";
+  }
+  50% {
+    content: "A Gr|";
+  }
+  51% {
+    content: "A G|";
+  }
+  52% {
+    content: "A |";
+  }
+  53% {
+    content: "A|";
+  }
+  54% {
+    content: "A |";
+  }
+  55% {
+    content: "A P|";
+  }
+  56% {
+    content: "A Ph|";
+  }
+  57% {
+    content: "A Pho|";
+  }
+  58% {
+    content: "A Phot|";
+  }
+  59% {
+    content: "A Photo|";
+  }
+  60% {
+    content: "A Photog|";
+  }
+  61% {
+    content: "A Photogr|";
+  }
+  62% {
+    content: "A Photogra|";
+  }
+  63% {
+    content: "A Photograp|";
+  }
+  64% {
+    content: "A Photograph|";
+  }
+  65% {
+    content: "A Photographe|";
+  }
+  66% {
+    content: "A Photographer|";
+  }
+  67% {
+    content: "A Photographer.|";
+  }
+  68% {
+    content: "A Photographer|";
+  }
+  69% {
+    content: "A Photographe|";
+  }
+  70% {
+    content: "A Photograph|";
+  }
+  71% {
+    content: "A Photograp|";
+  }
+  72% {
+    content: "A Photogra|";
+  }
+  73% {
+    content: "A Photogr|";
+  }
+  74% {
+    content: "A Photog|";
+  }
+  75% {
+    content: "A Photo|";
+  }
+  76% {
+    content: "A Phot|";
+  }
+  77% {
+    content: "A Pho|";
+  }
+  78% {
+    content: "A Ph|";
+  }
+  79% {
+    content: "A P|";
+  }
+  80% {
+    content: "A |";
+  }
+  81% {
+    content: "A|";
+  }
+  82% {
+    content: "|";
+  }
+  83% {
+    content: "C|";
+  }
+  84% {
+    content: "Cr|";
+  }
+  85% {
+    content: "Cre|";
+  }
+  86% {
+    content: "Crea|";
+  }
+  87% {
+    content: "Creat|";
+  }
+  88% {
+    content: "Creati|";
+  }
+  89% {
+    content: "Creativ|";
+  }
+  90% {
+    content: "Creative|";
+  }
+  91% {
+    content: "Creative.|";
+  }
+  92% {
+    content: "Creative|";
+  }
+  93% {
+    content: "Creativ|";
+  }
+  94% {
+    content: "Creati|";
+  }
+  95% {
+    content: "Creat|";
+  }
+  96% {
+    content: "Crea";
+  }
+  97% {
+    content: "Cre|";
+  }
+  98% {
+    content: "Cr|";
+  }
+  99% {
+    content: "C|";
+  }
+  100% {
+    content: "|";
+  }
+}
+/* End Home */
+/* Start About */
+.about h2 {
+  color: var(--second-color);
+  font-family: var(--first-font);
+  font-size: 32px;
+  line-height: 38.4px;
+  font-weight: 500;
+}
+.about h2 span {
+  font-weight: 700;
+}
+.about h4 {
+  color: var(--second-color);
+  font-family: var(--first-font);
+  font-size: 24px;
+  line-height: 28.8px;
+  margin: 24px 0px 8px;
+  font-weight: 500;
+}
+.about h4 span {
+  color: var(--main-color);
+  font-family: var(--first-font);
+  font-weight: 700;
+}
+.about p {
+  color: var(--third-color);
+  font-family: var(--second-font);
+  font-size: 16px;
+  line-height: 24px;
+  margin: 24px 0px 16px;
+}
+.about .icon {
+  width: 40px;
+  height: 40px;
+  margin: 0px 5px;
+  border: 2px solid #d4d4d4;
+  border-radius: 50%;
+  transition: border 1s;
+}
+.about .icon i {
+  transition: color 1s;
+}
+.about .icon:hover {
+  border: 2px solid var(--main-color);
+}
+.about .icon:hover i {
+  color: var(--main-color);
+}
+/* End About */
+/* Start Services */
+.services {
+  background-color: #f8f9fa;
+}
+.services .title h2 {
+  font-family: var(--first-font);
+  color: var(--second-color);
+  font-size: 32px;
+  line-height: 38.4px;
+  margin: 0px 0px 8px;
+  font-weight: 500;
+}
+.services .title h2 span {
+  font-weight: 700;
+}
+.services .title p {
+  font-family: var(--second-font);
+  color: var(--third-color);
+  line-height: 24px;
+}
+.services .item {
+  padding: 30px;
+  border: 1px solid #e8e8e8;
+  margin-bottom: 30px;
+}
+.services .item i {
+  color: var(--main-color);
+  font-size: 44px;
+  line-height: 44px;
+  margin-bottom: 20px;
+}
+.services .item h5 {
+  color: var(--second-color);
+  font-family: var(--first-font);
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  position: relative;
+}
+.services .item h5::after {
+  content: "";
+  bottom: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20%;
+  height: 2px;
+  background-color: var(--main-color);
+  position: absolute;
+  transition: width 1s;
+}
+.services .item:hover h5::after {
+  width: 40%;
+}
+.services .item p {
+  color: var(--third-color);
+  font-family: var(--second-font);
+  margin: 16px 0px;
+}
+/* End Services */
+/* Start Hire */
+.hire h2 {
+  color: var(--second-color);
+  font-family: var(--first-font);
+  font-size: 32px;
+  line-height: 38.4px;
+  margin: 0px 0px 8px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.hire a {
+  color: #fff;
+  background-color: var(--main-color);
+  font-family: var(--second-font);
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.6px;
+  padding: 15px 32px;
+  font-weight: 700;
+}
+.hire a:hover {
+  background-color: var(--main-color);
+  color: #fff;
+}
+/* End Hire */
+/* Start Client */
+.client {
+  background-color: #f8f9fa;
+}
+.client .title h2 {
+  font-family: var(--first-font);
+  color: var(--second-color);
+  font-size: 32px;
+  line-height: 38.4px;
+  margin: 0px 0px 8px;
+  font-weight: 500;
+}
+.client .title h2 span {
+  font-weight: 700;
+}
+.client .title p {
+  font-family: var(--second-font);
+  color: var(--third-color);
+  line-height: 24px;
+}
+.client i {
+  color: var(--main-color);
+  font-size: 50px;
+  line-height: 50px;
+}
+.client .carousel p {
+  color: var(--third-color);
+  font-family: var(--second-font);
+  font-size: 18px;
+  line-height: 27px;
+  margin: 24px 0px 16px;
+  font-style: italic;
+}
+.client .carousel h4 {
+  color: var(--second-color);
+  font-family: var(--second-font);
+  margin: 24px 0px 0px;
+}
+.client .carousel h4 span {
+  font-weight: 700;
+}
+.carousel-indicators [data-bs-target] {
+  background-color: var(--main-color);
+  width: 20px;
+  height: 4px;
+}
+.carousel-indicators [data-bs-target].active {
+  width: 35px;
+}
+/* End Client */
+/* Start portfolio */
+.portfolio {
+  background-color: #f8f9fa;
+}
+.portfolio .title h2 {
+  font-family: var(--first-font);
+  color: var(--second-color);
+  font-size: 32px;
+  line-height: 38.4px;
+  margin: 0px 0px 8px;
+  font-weight: 500;
+}
+.portfolio .title h2 span {
+  font-weight: 700;
+}
+.portfolio .title p {
+  font-family: var(--second-font);
+  color: var(--third-color);
+  line-height: 24px;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: var(--main-color);
+  border-radius: 100vh;
+}
+.portfolio .layout {
+  width: 100%;
+  height: 100%;
+  top: 100%;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.69);
+  transition: top 1s;
+}
+.portfolio .item:hover .layout {
+  top: 0;
+}
+/* End portfolio */
+/* Start Blog */
+.blog {
+  background-color: #f8f9fa;
+}
+.blog .title h2 {
+  font-family: var(--first-font);
+  color: var(--second-color);
+  font-size: 32px;
+  line-height: 38.4px;
+  margin: 0px 0px 8px;
+  font-weight: 500;
+}
+.blog .title h2 span {
+  font-weight: 700;
+}
+.blog .title p {
+  font-family: var(--second-font);
+  color: var(--third-color);
+  line-height: 24px;
+}
+.blog .row .first-link {
+  color: var(--second-color);
+  font-family: var(--first-font);
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+.blog .row .first-pr {
+  color: var(--third-color);
+  font-family: var(--second-font);
+  line-height: 19.2px;
+  font-weight: 500;
+}
+.blog .row .first-pr a {
+  color: var(--main-color);
+  font-weight: bold;
+}
+.blog .row .second-pr {
+  color: var(--third-color);
+  font-family: var(--second-font);
+  line-height: 24px;
+  margin: 16px 0px;
+}
+.blog .row .second-link {
+  color: var(--third-color);
+  font-family: var(--second-font);
+  line-height: 19.2px;
+  font-weight: 700;
+}
+/* End Blog */
+/* Start Contact */
+.contact .title h2 {
+  font-family: var(--first-font);
+  color: var(--second-color);
+  font-size: 32px;
+  line-height: 38.4px;
+  margin: 0px 0px 8px;
+  font-weight: 500;
+}
+.contact .title h2 span {
+  font-weight: 700;
+}
+.contact .title p {
+  font-family: var(--second-font);
+  color: var(--third-color);
+  line-height: 24px;
+}
+.contact .row i {
+  color: var(--main-color);
+  font-size: 40px;
+  line-height: 40px;
+  margin: 0px 0px 8px;
+}
+.contact .row h5 {
+  color: var(--second-color);
+  font-family: var(--first-font);
+  font-size: 18px;
+  line-height: 21.6px;
+  font-weight: 700;
+}
+.contact .row p {
+  color: var(--third-color);
+  font-family: var(--second-font);
+  line-height: 24px;
+  margin: 0px 0px 16px;
+}
+.contact input {
+  width: 100%;
+  color: var(--second-color);
+  font-family: var(--second-font);
+  line-height: 24px;
+  margin: 0px 0px 14px;
+  padding: 6px 12px;
+  border: solid 1px #d4d4d4;
+  height: 50px;
+}
+.contact :is(input, textarea):focus {
+  outline: none;
+  border-color: var(--main-color);
+}
+.contact textarea {
+  width: 100%;
+  resize: vertical;
+  max-height: 21.875rem;
+  min-height: 9.375rem;
+}
+.contact .btn-main {
+  background-color: var(--main-color);
+  color: #fff;
+  --border-radius: 100vh;
+  --padding: 0.9375rem 1.875rem;
+  --font-size: 1.125rem;
+  margin-top: 1.25rem;
+}
+/* End Contact */
+/* Start Footer */
+footer {
+  background-color: var(--second-color);
+  height: 300px;
+}
+footer .icon {
+  background-color: rgba(241, 241, 241, 0.08);
+  width: 50px;
+  height: 50px;
+  margin: 0px 5px;
+  border-radius: 50%;
+  transition: border 1s;
+}
+footer .icon i {
+  transition: color 1s;
+  font-size: 20px;
+  color: #ababab;
+}
+footer .icon:hover i {
+  color: var(--main-color);
+}
+footer p {
+  color: #ababab;
+  font-family: var(--second-font);
+  line-height: 24px;
+  margin: 16px 0px 0px;
+}
+/* End Footer */
