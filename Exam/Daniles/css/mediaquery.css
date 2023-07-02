@@ -1,0 +1,28 @@
+/* Start Home */
+@media all and (max-width: 575px) {
+  .home .overlay .title h1 span {
+    font-size: 30px;
+    line-height: 36px;
+    padding: 6px 0px;
+  }
+  .home .overlay .title h1::after {
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
+@media all and (max-width: 991px) {
+  .home .overlay .title h1 span {
+    font-size: 44px;
+    line-height: 52.8px;
+    padding: 8.8px 0px;
+  }
+  .home .overlay .title h1::after {
+    font-size: 44px;
+    line-height: 52.8px;
+  }
+}
+
+/* End Home */
+/* Start Team */
+
+/* End Team */
