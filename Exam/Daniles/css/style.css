@@ -11,6 +11,9 @@
 body {
   scroll-behavior: smooth;
 }
+html {
+  scroll-padding-top: 62px;
+}
 .section-head h3 {
   position: relative;
   font-family: var(--first-font);
