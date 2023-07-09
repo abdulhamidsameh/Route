@@ -1,0 +1,445 @@
+/* start variables */
+:root {
+  --main-color: #000;
+  --second-color: #666666;
+  --third-color: #2196f3;
+  --forth-color: #777777;
+  --fifth-color: #ececec;
+}
+/* end variables */
+/* start main style */
+* {
+  font-family: "Cairo", sans-serif;
+}
+.main-title {
+  text-align: center;
+}
+.main-title h2 {
+  color: var(--third-color);
+  font-size: 30px;
+  line-height: 34.5px;
+  font-weight: 700;
+}
+/* end main style */
+/* start navbar */
+nav .logo {
+  color: var(--third-color);
+  font-size: 26px;
+  line-height: 29.9px;
+  font-weight: 700;
+}
+nav a.active {
+  color: var(--third-color) !important;
+}
+/* end navbar */
+/* start header style */
+.home::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -40px;
+  width: 100%;
+  height: 100%;
+  background-color: #ececec;
+  z-index: -1;
+  transform: skewY(-6deg);
+  transform-origin: top left;
+}
+.home .text h1 {
+  color: var(--main-color);
+  font-size: 40px;
+  line-height: 46px;
+  letter-spacing: -2px;
+  font-weight: 700;
+}
+.home .text p {
+  color: var(--second-color);
+  font-size: 23px;
+  line-height: 39.1px;
+  margin: 5px 0px 0px;
+  max-width: 500px;
+}
+.home .text h1 span {
+  color: var(--third-color);
+}
+.home .image img {
+  position: relative;
+  animation: move 5s linear infinite;
+}
+@keyframes move {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -50px;
+  }
+  100% {
+    top: 0;
+  }
+}
+.home i {
+  color: var(--third-color);
+  position: relative;
+  animation: bouncing 1.5s infinite;
+}
+.home .go-down {
+  color: var(--third-color);
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.3s;
+}
+@keyframes bouncing {
+  0%,
+  10%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40%,
+  60% {
+    transform: translateY(-15px);
+  }
+}
+/* end header style */
+/* start articles */
+.articles .cat {
+  overflow: hidden;
+  border-radius: 6px;
+  position: relative;
+  box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
+  transition: transform 1s;
+}
+.articles .cat:hover {
+  transform: translateY(-5%);
+}
+.articles .cat .description h3 {
+  color: var(--main-color);
+  font-size: 18.72px;
+  line-height: 21.528px;
+  font-weight: 700;
+}
+.articles .cat .description p {
+  color: var(--forth-color);
+  margin: 10px 0px 0px;
+}
+.articles .cat .description {
+  border-bottom: 1px solid #e6e6e7;
+}
+.articles .cat .icon {
+  color: var(--third-color);
+}
+.articles .cat .icon i {
+  font-weight: 900;
+}
+.articles .cat:hover .icon i {
+  position: relative;
+  animation: iconkeyframe 1.5s infinite;
+}
+@keyframes iconkeyframe {
+  0%,
+  10%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateX(0);
+  }
+  40%,
+  60% {
+    transform: translateX(15px);
+  }
+}
+/* end articles */
+/* start gallery */
+.gallery {
+  background-color: var(--fifth-color);
+}
+.gallery .cart {
+  border: #fff 15px solid;
+  box-shadow: 0px 12px 20px 0px rgb(0 0 0 / 13%),
+    0px 2px 4px 0px rgb(0 0 0 / 12%);
+}
+.gallery .cart .image {
+  position: relative;
+  overflow: hidden;
+}
+.gallery .cart .image::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(255 255 255 / 20%);
+  width: 0;
+  height: 0;
+  opacity: 0;
+  z-index: 2;
+}
+.gallery .cart .image:hover::before {
+  animation: flashing 0.7s;
+}
+.gallery .cart img {
+  max-width: 100%;
+  transition: 0.3s;
+}
+.gallery .cart .image:hover img {
+  transform: rotate(5deg) scale(1.1);
+}
+@keyframes flashing {
+  0%,
+  40% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    width: 200%;
+    height: 200%;
+  }
+}
+/* end gallery */
+/* start testimonials */
+.testimonials {
+  background-color: var(--fifth-color);
+}
+.testimonials .card {
+  position: relative;
+  border: none;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+.testimonials .card img {
+  position: absolute;
+  right: 0;
+  top: -50%;
+  transform: translateY(50%);
+  border-radius: 50%;
+  border: var(--fifth-color) solid 10px;
+}
+.testimonials .card h3 {
+  font-size: 18.72px;
+  line-height: 21.528px;
+  margin: 0px 0px 10px;
+  font-weight: 700;
+}
+.testimonials .card span {
+  color: var(--forth-color);
+  margin: 0px 0px 10px;
+}
+.testimonials .card p {
+  color: var(--forth-color);
+  line-height: 24px;
+  margin: 10px 0px 0px;
+}
+.testimonials .card i {
+  color: #ffc107;
+}
+/* end testimonials */
+/* start team members */
+.teammembers .card {
+  position: relative;
+  margin: 50px;
+  height: 400px;
+  background-color: var(--fifth-color);
+  border: none;
+  border-radius: 20px;
+}
+.teammembers .card img {
+  position: absolute;
+  width: 100%;
+  left: -20%;
+  top: 30%;
+  transform: translateY(-15%);
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+.teammembers .card .icons {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.teammembers .card:hover img {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+.teammembers .card:hover .description h3 {
+  color: var(--second-color);
+}
+.teammembers .card .icons i {
+  color: var(--second-color);
+  transition: all 0.3s;
+}
+.teammembers .card .icons i:hover {
+  color: var(--third-color);
+}
+.teammembers .card .description h3 {
+  color: var(--third-color);
+  font-size: 22px;
+  line-height: 25.3px;
+  margin: 22px 0px 0px;
+  font-weight: 700;
+}
+.teammembers .card .description p {
+  margin: 10px 0px 25px;
+}
+/* end team members */
+/* start services */
+.services {
+  background-color: var(--fifth-color);
+}
+.services .card {
+  background-color: #fff;
+  border: none;
+  box-shadow: 0 12px 20px 0 rgb(0 0 0 / 13%), 0 2px 4px 0 rgb(0 0 0 / 12%);
+}
+.services .card i {
+  text-align: center;
+  color: var(--forth-color);
+  font-size: 64px;
+  line-height: 64px;
+  margin: 30px 0px 20px;
+  font-weight: 900;
+}
+.services .card h3 {
+  color: var(--third-color);
+  font-size: 25px;
+  margin: 20px 0px 40px;
+  text-align: center;
+  font-weight: 700;
+}
+.services .card a {
+  color: var(--third-color);
+  text-decoration: none;
+  padding: 10px;
+}
+.services .card span {
+  padding: 10px;
+  color: var(--third-color);
+}
+/* end services */
+/* start how it works */
+.howitworks {
+  background-color: var(--fifth-color);
+}
+.howitworks .card {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--fifth-color);
+  border: #fff 3px solid;
+  margin-block: 20px;
+}
+.howitworks .card img {
+  width: 15%;
+  height: 15%;
+}
+.howitworks .card h3 {
+  font-size: 22px;
+  line-height: 25.3px;
+  font-weight: 700;
+}
+.howitworks .card p {
+  color: var(--forth-color);
+  font-size: 18px;
+  line-height: 30.6px;
+  margin: 10px 0px 0px;
+}
+/* end how it works */
+/* start pricing plan */
+.pricingplan {
+  background-color: var(--fifth-color);
+}
+.pricingplan .card {
+  box-shadow: 0 12px 20px 0 rgb(0 0 0 / 13%), 0 2px 4px 0 rgb(0 0 0 / 12%);
+}
+.pricingplan .card p {
+  font-size: 25px;
+  line-height: 28.75px;
+  letter-spacing: -1px;
+  margin: 30px 0px;
+  font-weight: 700;
+  text-align: center;
+}
+.pricingplan .card img {
+  width: 20%;
+}
+.pricingplan .card .price {
+  color: var(--third-color);
+  font-size: 60px;
+  line-height: 69px;
+  margin: 20px 0px 5px;
+  text-align: center;
+  font-weight: 700;
+}
+.pricingplan .card .time {
+  text-align: center;
+  color: var(--forth-color);
+}
+.pricingplan .card ul {
+  list-style: none;
+}
+.pricingplan .card li {
+  padding: 20px;
+  line-height: 18.4px;
+  color: #000;
+}
+.pricingplan .card li i {
+  color: var(--third-color);
+}
+.pricingplan .card a {
+  text-decoration: none;
+  padding: 15px 25px;
+  border: var(--third-color) 2px solid;
+  line-height: 18.4px;
+  font-weight: 700;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+.pricingplan .card a:hover {
+  color: #fff;
+  background-color: var(--third-color);
+}
+/* end pricing plan */
+/* start Stats */
+.stats h2 {
+  text-align: center;
+  font-size: 40px;
+  line-height: 46px;
+  font-weight: 700;
+}
+.stats .card {
+  background-color: var(--fifth-color);
+  border: none;
+  text-align: center;
+  padding: 30px;
+}
+.stats .card i {
+  font-size: 32px;
+  line-height: 32px;
+}
+.stats .card p {
+  font-size: 50px;
+  line-height: 57.5px;
+  margin: 10px 0px;
+  font-weight: 700;
+}
+.stats .card span {
+  color: var(--third-color);
+  font-size: 20px;
+  font-weight: 700;
+  font-style: italic;
+}
+/* end Stats */
+/* start footer */
+footer {
+  background-color: var(--forth-color);
+
+  margin-bottom: 0;
+}
+footer p {
+  color: #fff;
+}
+/* end footer */
