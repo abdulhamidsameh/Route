@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/mediaquery.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Bondi</title>
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#navbar-example">
+    <!-- start navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar-example">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="img/logo.png" alt="" /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#blog">Blog</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <a href="" class="login rounded-5 text-decoration-none">Login</a>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- end navbar -->
+    <!-- start body -->
+    <header class="home min-vh-100" id="home">
+      <div
+        class="container min-vh-100 d-flex justify-content-center align-items-center"
+      >
+        <div class="title text-center">
+          <h1>Taste the Creativity</h1>
+          <p>We make awesome graphic and web design</p>
+          <a href="" class="rounded-5 text-decoration-none">Get Started</a>
+        </div>
+      </div>
+    </header>
+    <!-- end body -->
+    <!-- start Services -->
+    <section class="services my-5" id="services">
+      <div class="container my-4">
+        <div class="section-title">
+          <img src="img/title.png" alt="" />
+          <h2>We are Good at</h2>
+          <p>SOME OF THESE STUFF UNDER</p>
+        </div>
+        <div class="row py-5 my-5">
+          <div class="col-md-6 col-lg-4">
+            <div class="text-center">
+              <i class="fa-solid fa-pencil"></i>
+              <h4>GRAPHIC DESIGN</h4>
+              <p>
+                Pellentesque in ipsum id orci porta dapibus. Vivamus magna
+                justo, lacinia eget consectetur sed, convallis at tellus.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="text-center">
+              <i class="fa-solid fa-tv"></i>
+              <h4>GRAPHIC DESIGN</h4>
+              <p>
+                Pellentesque in ipsum id orci porta dapibus. Vivamus magna
+                justo, lacinia eget consectetur sed, convallis at tellus.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="text-center">
+              <i class="fa-solid fa-plug"></i>
+              <h4>GRAPHIC DESIGN</h4>
+              <p>
+                Pellentesque in ipsum id orci porta dapibus. Vivamus magna
+                justo, lacinia eget consectetur sed, convallis at tellus.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end Services -->
+    <!-- start Portfolio -->
+    <section class="portfolio my-5 py-5" id="portfolio">
+      <div class="container my-4">
+        <div class="section-title">
+          <img src="img/title.png" alt="" />
+          <h2>We Make This</h2>
+          <p>PREPARE TO BE AMAZED</p>
+        </div>
+        <div class="my-5">
+          <ul
+            class="nav nav-pills mx-auto w-50 d-flex justify-content-between"
+            id="pills-tab"
+            role="tablist"
+          >
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="pills-all-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-all"
+                type="button"
+                role="tab"
+                aria-controls="pills-all"
+                aria-selected="true"
+              >
+                ALL
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-design-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-design"
+                type="button"
+                role="tab"
+                aria-controls="pills-design"
+                aria-selected="false"
+              >
+                Design
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-code-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-code"
+                type="button"
+                role="tab"
+                aria-controls="pills-code"
+                aria-selected="false"
+              >
+                Code
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-photo-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-photo"
+                type="button"
+                role="tab"
+                aria-controls="pills-photo"
+                aria-selected="false"
+              >
+                Photo
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-app-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-app"
+                type="button"
+                role="tab"
+                aria-controls="pills-app"
+                aria-selected="false"
+              >
+                App
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="pills-all"
+              role="tabpanel"
+              aria-labelledby="pills-all-tab"
+              tabindex="0"
+            >
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="item position-relative overflow-hidden m-3">
+                    <img src="img/work-01.jpg" class="w-100" alt="" />
+                    <div
+                      class="layout position-absolute d-flex align-items-center justify-content-center"
+                    >
+                      <div class="heding text-white text-center">
+                        <p>Category</p>
+                        <p>Project Title</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="item position-relative overflow-hidden m-3">
+                    <img src="img/work-02.jpg" class="w-100" alt="" />
+                    <div
+                      class="layout position-absolute d-flex align-items-center justify-content-center"
+                    >
+                      <div class="heding text-white text-center">
+                        <p>Category</p>
+                        <p>Project Title</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="item position-relative overflow-hidden m-3">
+                    <img src="img/work-03.jpg" class="w-100" alt="" />
+                    <div
+                      class="layout position-absolute d-flex align-items-center justify-content-center"
+                    >
+                      <div class="heding text-white text-center">
+                        <p>Category</p>
+                        <p>Project Title</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="item position-relative overflow-hidden m-3">
+                    <img src="img/work-04.jpg" class="w-100" alt="" />
+                    <div
+                      class="layout position-absolute d-flex align-items-center justify-content-center"
+                    >
+                      <div class="heding text-white text-center">
+                        <p>Category</p>
+                        <p>Project Title</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="item position-relative overflow-hidden m-3">
+                    <img src="img/work-05.jpg" class="w-100" alt="" />
+                    <div
+                      class="layout position-absolute d-flex align-items-center justify-content-center"
+                    >
+                      <div class="heding text-white text-center">
+                        <p>Category</p>
+                        <p>Project Title</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="item position-relative overflow-hidden m-3">
+                    <img src="img/work-06.jpg" class="w-100" alt="" />
+                    <div
+                      class="layout position-absolute d-flex align-items-center justify-content-center"
+                    >
+                      <div class="heding text-white text-center">
+                        <p>Category</p>
+                        <p>Project Title</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="item position-relative overflow-hidden m-3">
+                    <img src="img/work-07.jpg" class="w-100" alt="" />
+                    <div
+                      class="layout position-absolute d-flex align-items-center justify-content-center"
+                    >
+                      <div class="heding text-white text-center">
+                        <p>Category</p>
+                        <p>Project Title</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="item position-relative overflow-hidden m-3">
+                    <img src="img/work-08.jpg" class="w-100" alt="" />
+                    <div
+                      class="layout position-absolute d-flex align-items-center justify-content-center"
+                    >
+                      <div class="heding text-white text-center">
+                        <p>Category</p>
+                        <p>Project Title</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-design"
+              role="tabpanel"
+              aria-labelledby="pills-design-tab"
+              tabindex="0"
+            >
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="item position-relative overflow-hidden m-3">
+                    <img src="img/work-01.jpg" class="w-100" alt="" />
+                    <div
+                      class="layout position-absolute d-flex align-items-center justify-content-center"
+                    >
+                      <div class="heding text-white text-center">
+                        <p>Category</p>
+                        <p>Project Title</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="item position-relative overflow-hidden m-3">
+                    <img src="img/work-02.jpg" class="w-100" alt="" />
+                    <div
+                      class="layout position-absolute d-flex align-items-center justify-content-center"
+                    >
+                      <div class="heding text-white text-center">
+                        <p>Category</p>
+                        <p>Project Title</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="item position-relative overflow-hidden m-3">
+                    <img src="img/work-03.jpg" class="w-100" alt="" />
+                    <div
+                      class="layout position-absolute d-flex align-items-center justify-content-center"
+                    >
+                      <div class="heding text-white text-center">
+                        <p>Category</p>
+                        <p>Project Title</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="item position-relative overflow-hidden m-3">
+                    <img src="img/work-04.jpg" class="w-100" alt="" />
+                    <div
+                      class="layout position-absolute d-flex align-items-center justify-content-center"
+                    >
+                      <div class="heding text-white text-center">
+                        <p>Category</p>
+                        <p>Project Title</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-code"
+              role="tabpanel"
+              aria-labelledby="pills-code-tab"
+              tabindex="0"
+            >
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="item position-relative overflow-hidden m-3">
+                    <img src="img/work-01.jpg" class="w-100" alt="" />
+                    <div
+                      class="layout position-absolute d-flex align-items-center justify-content-center"
+                    >
+                      <div class="heding text-white text-center">
+                        <p>Category</p>
+                        <p>Project Title</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="item position-relative overflow-hidden m-3">
+                    <img src="img/work-02.jpg" class="w-100" alt="" />
+                    <div
+                      class="layout position-absolute d-flex align-items-center justify-content-center"
+                    >
+                      <div class="heding text-white text-center">
+                        <p>Category</p>
+                        <p>Project Title</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="item position-relative overflow-hidden m-3">
+                    <img src="img/work-03.jpg" class="w-100" alt="" />
+                    <div
+                      class="layout position-absolute d-flex align-items-center justify-content-center"
+                    >
+                      <div class="heding text-white text-center">
+                        <p>Category</p>
+                        <p>Project Title</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="item position-relative overflow-hidden m-3">
+                    <img src="img/work-04.jpg" class="w-100" alt="" />
+                    <div
+                      class="layout position-absolute d-flex align-items-center justify-content-center"
+                    >
+                      <div class="heding text-white text-center">
+                        <p>Category</p>
+                        <p>Project Title</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="item position-relative overflow-hidden m-3">
+                    <img src="img/work-05.jpg" class="w-100" alt="" />
+                    <div
+                      class="layout position-absolute d-flex align-items-center justify-content-center"
+                    >
+                      <div class="heding text-white text-center">
+                        <p>Category</p>
+                        <p>Project Title</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-photo"
+              role="tabpanel"
+              aria-labelledby="pills-photo-tab"
+              tabindex="0"
+            >
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="item position-relative overflow-hidden m-3">
+                    <img src="img/work-01.jpg" class="w-100" alt="" />
+                    <div
+                      class="layout position-absolute d-flex align-items-center justify-content-center"
+                    >
+                      <div class="heding text-white text-center">
+                        <p>Category</p>
+                        <p>Project Title</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="item position-relative overflow-hidden m-3">
+                    <img src="img/work-02.jpg" class="w-100" alt="" />
+                    <div
+                      class="layout position-absolute d-flex align-items-center justify-content-center"
+                    >
+                      <div class="heding text-white text-center">
+                        <p>Category</p>
+                        <p>Project Title</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-app"
+              role="tabpanel"
+              aria-labelledby="pills-app-tab"
+              tabindex="0"
+            >
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="item position-relative overflow-hidden m-3">
+                    <img src="img/work-01.jpg" class="w-100" alt="" />
+                    <div
+                      class="layout position-absolute d-flex align-items-center justify-content-center"
+                    >
+                      <div class="heding text-white text-center">
+                        <p>Category</p>
+                        <p>Project Title</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="item position-relative overflow-hidden m-3">
+                    <img src="img/work-02.jpg" class="w-100" alt="" />
+                    <div
+                      class="layout position-absolute d-flex align-items-center justify-content-center"
+                    >
+                      <div class="heding text-white text-center">
+                        <p>Category</p>
+                        <p>Project Title</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="item position-relative overflow-hidden m-3">
+                    <img src="img/work-03.jpg" class="w-100" alt="" />
+                    <div
+                      class="layout position-absolute d-flex align-items-center justify-content-center"
+                    >
+                      <div class="heding text-white text-center">
+                        <p>Category</p>
+                        <p>Project Title</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="item position-relative overflow-hidden m-3">
+                    <img src="img/work-04.jpg" class="w-100" alt="" />
+                    <div
+                      class="layout position-absolute d-flex align-items-center justify-content-center"
+                    >
+                      <div class="heding text-white text-center">
+                        <p>Category</p>
+                        <p>Project Title</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="item position-relative overflow-hidden m-3">
+                    <img src="img/work-05.jpg" class="w-100" alt="" />
+                    <div
+                      class="layout position-absolute d-flex align-items-center justify-content-center"
+                    >
+                      <div class="heding text-white text-center">
+                        <p>Category</p>
+                        <p>Project Title</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="item position-relative overflow-hidden m-3">
+                    <img src="img/work-06.jpg" class="w-100" alt="" />
+                    <div
+                      class="layout position-absolute d-flex align-items-center justify-content-center"
+                    >
+                      <div class="heding text-white text-center">
+                        <p>Category</p>
+                        <p>Project Title</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <a href="" class="rounded-5 text-decoration-none">I Want More</a>
+        </div>
+      </div>
+    </section>
+    <!-- end Portfolio -->
+    <!-- start about -->
+    <section class="about my-5" id="about">
+      <div class="container my-4">
+        <div class="section-title">
+          <img src="img/title.png" alt="" />
+          <h2>Some Stuff About Us</h2>
+          <p>THE GREAT TEAM</p>
+          <p class="w-75 m-auto">
+            Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit,
+            eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta
+            dapibus. Proin eget tortor risus. Donec sollicitudin molestie
+            malesuada.
+          </p>
+        </div>
+        <div class="row my-5 py-5">
+          <div
+            class="col-lg-4 d-flex justify-content-center align-items-center"
+          >
+            <div>
+              <h4>Retina Design</h4>
+              <p>
+                Vestibulum ac diam sit amet quam vehicula elementum sed sit amet
+                dui. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar
+                a.
+              </p>
+              <p>
+                Donec rutrum congue leo eget malesuada. Mauris blandit aliquet
+                elit, eget tincidunt nibh pulvinar a. Pellentesque in ipsum id
+                orci porta dapibus. Proin eget tortor risus. Donec sollicitudin
+                molestie malesuada.
+              </p>
+              <a href="" class="rounded-5 text-decoration-none">ORDER ME ONE</a>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <img src="img/laptop.png" class="w-100" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end about -->
+    <!-- start contact -->
+    <section class="contact mt-5 py-5" id="contact">
+      <div class="container my-4">
+        <div class="section-title">
+          <img src="img/title.png" alt="" />
+          <h2>Meet The Team</h2>
+          <p>
+            Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit,
+            eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta
+            dapibus. Proin eget tortor risus. Donec sollicitudin molestie
+            malesuada.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-3">
+            <div class="bg-white text-center">
+              <img src="img/team-1.png" class="w-100" alt="" />
+              <h4>Luke Skywalker</h4>
+              <blockquote>
+                “I don't understand how we got by those troops. I thought we
+                were dead.“
+              </blockquote>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="bg-white text-center">
+              <img src="img/team-2.png" class="w-100" alt="" />
+              <h4>Luke Skywalker</h4>
+              <blockquote>
+                “I don't understand how we got by those troops. I thought we
+                were dead.“
+              </blockquote>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="bg-white text-center">
+              <img src="img/team-3.png" class="w-100" alt="" />
+              <h4>Luke Skywalker</h4>
+              <blockquote>
+                “I don't understand how we got by those troops. I thought we
+                were dead.“
+              </blockquote>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="bg-white text-center">
+              <img src="img/team-4.png" class="w-100" alt="" />
+              <h4>Luke Skywalker</h4>
+              <blockquote>
+                “I don't understand how we got by those troops. I thought we
+                were dead.“
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end contact -->
+    <!-- start tech  -->
+    <section class="tech d-flex justify-content-center align-items-center">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <img src="img/tech-1.png" alt="" />
+          <img src="img/tech-2.png" alt="" />
+          <img src="img/tech-3.png" alt="" />
+          <img src="img/tech-4.png" alt="" />
+          <img src="img/tech-1.png" alt="" />
+          <img src="img/tech-2.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- end tech -->
+    <!-- start project -->
+    <section
+      class="text-center project d-flex justify-content-center align-items-center"
+    >
+      <div class="">
+        <h2>Start Your Project Now</h2>
+        <p>
+          Leave your description and we start the engine.Don't worry,you can
+          cancel anytime
+        </p>
+        <a href="" class="rounded-5 text-decoration-none">Start Project</a>
+      </div>
+    </section>
+    <!-- end project -->
+    <!-- start blog -->
+    <section class="blog mt-5 py-5" id="blog">
+      <div class="container my-4">
+        <div class="section-title">
+          <img src="img/title.png" alt="" />
+          <h2>Read Our Blog</h2>
+          <p>NEW STORIES</p>
+        </div>
+        <div class="row my-5">
+          <div class="col-md-6 col-lg-4">
+            <div class="shadow pb-2">
+              <img src="img/blog-1.jpg" class="w-100" alt="" />
+              <div class="m-3">
+                <p>Jan 17, 2022</p>
+                <h5>Some Awesome Blog Title Here</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="shadow pb-2">
+              <img src="img/blog-2.jpg" class="w-100" alt="" />
+              <div class="m-3">
+                <p>Jan 17, 2022</p>
+                <h5>Some Awesome Blog Title Here</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="shadow pb-2">
+              <img src="img/blog-3.jpg" class="w-100" alt="" />
+              <div class="m-3">
+                <p>Jan 17, 2022</p>
+                <h5>Some Awesome Blog Title Here</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <a href="" class="rounded-5 text-decoration-none">MORE STORIES</a>
+        </div>
+      </div>
+    </section>
+    <!-- end blog -->
+    <!-- start Subscribe  -->
+    <section
+      class="text-center subscribe d-flex justify-content-center align-items-center"
+    >
+      <div class="container">
+        <div class="d-flex justify-content-around align-items-center w-100">
+          <p>Subscribe to our Newsletter:</p>
+          <input
+            type="email"
+            class="form-control w-50"
+            placeholder="Enter Email Address"
+          />
+          <a href="" class="rounded-5 text-decoration-none">Subscribe</a>
+        </div>
+      </div>
+    </section>
+    <!-- end Subscribe  -->
+    <!-- start footer -->
+    <footer class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="card1 col-md-6 col-lg-3">
+            <div>
+              <img src="img/logo.png" alt="" />
+              <p class="first">
+                Pellentesque in ipsum id orci porta dapibus. Vivamus magna
+                justo, lacinia eget consectetur sed, convallis at tellus.
+              </p>
+              <p class="second">Created By <span>Graphberry</span></p>
+              <p class="third">© 2022 - <span>Bondi Inc</span></p>
+            </div>
+          </div>
+          <div class="card2 col-md-6 col-lg-3">
+            <div>
+              <h5>Links</h5>
+              <p>Home</p>
+              <p>Our Services</p>
+              <p>Portfolio</p>
+              <p>Testimonials</p>
+              <p>Support</p>
+              <p>Terms and Condition</p>
+            </div>
+          </div>
+          <div class="card2 col-md-6 col-lg-3">
+            <div>
+              <h5>About Us</h5>
+              <p>Sign In</p>
+              <p>Register</p>
+              <p>About Us</p>
+              <p>Blog</p>
+              <p>Contact Us</p>
+            </div>
+          </div>
+          <div class="card2 col-md-6 col-lg-3">
+            <div>
+              <h5>Contact Us</h5>
+              <p>
+                Get in touch with us via mail phone.We are waiting for your call
+                or message
+              </p>
+              <a href="" class="rounded-5 text-decoration-none"
+                >graphberry@gmail.com</a
+              >
+              <div class="icons my-5 d-flex gap-3">
+                <div class="icon">
+                  <i class="fa-brands fa-facebook"></i>
+                </div>
+                <div class="icon">
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+                <div class="icon">
+                  <i class="fa-brands fa-linkedin"></i>
+                </div>
+                <div class="icon">
+                  <i class="fa-brands fa-youtube"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+    <script src="js/main.js"></script>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

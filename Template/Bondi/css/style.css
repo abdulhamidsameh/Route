@@ -1,0 +1,294 @@
+/* start variables */
+:root {
+  --global-font: "Roboto", sans-serif;
+  --main-color: #19283f;
+  --second-color: #f8f9fa;
+  --third-color: #ffc400;
+  --forth-color: #ff3150;
+  --six-color: #33d1cc;
+  --seven-color: #212529;
+}
+/* end variables */
+/* start global style */
+body,
+a {
+  font-family: var(--global-font);
+}
+.section-title {
+  text-align: center;
+  position: relative;
+}
+.section-title img {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0px 0px 24px;
+}
+.section-title h2 {
+  color: var(--seven-color);
+  font-size: 32px;
+  line-height: 38.4px;
+  margin: 0px 0px 8px;
+  font-weight: 500;
+}
+.section-title p {
+  color: rgba(0, 0, 0, 0.5);
+  margin: 0px 0px 16px;
+}
+.section-title::after {
+  content: "";
+  width: 120px;
+  height: 2px;
+  background-color: var(--six-color);
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* end global style */
+/* start navbar */
+nav {
+  background-color: var(--main-color);
+}
+nav ul li .nav-link {
+  color: #ffffff;
+}
+nav .container .links ul li a {
+  font-family: var(--global-font);
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.75px;
+  margin: 0px 7px;
+  padding: 8px;
+  font-weight: 500;
+}
+nav a.active {
+  color: var(--six-color) !important;
+}
+nav .login {
+  color: var(--third-color);
+  padding: 8px 16px;
+  background-color: var(--forth-color);
+}
+nav ul li .nav-link:hover {
+  color: var(--six-color);
+}
+/* end navbar */
+/* start home */
+.home {
+  background-color: var(--main-color);
+}
+.home .container .title h1 {
+  color: var(--second-color);
+  font-size: 40px;
+  line-height: 48px;
+  margin: 0px 0px 8px;
+  font-weight: 500;
+}
+.home .container .title p {
+  color: RGBA(255, 255, 255, 0.5);
+  margin: 0px 0px 48px;
+}
+.home .container .title a {
+  color: var(--third-color);
+  padding: 8px 16px;
+  background-color: var(--forth-color);
+}
+/* end home */
+/* start services */
+.services .row i {
+  color: var(--six-color);
+  font-size: 64px;
+  line-height: 96px;
+  vertical-align: -8px;
+}
+.services .row h4 {
+  color: var(--third-color);
+  font-size: 24px;
+  line-height: 28.8px;
+  margin: 16px 0px;
+  font-weight: 500;
+}
+.services .row p {
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 32px;
+  margin: 0px 0px 16px;
+}
+/* end services */
+/* start portfolio */
+.portfolio {
+  background-color: #eff7fa;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: var(--forth-color);
+  border-radius: 100vh;
+}
+.portfolio .layout {
+  width: 100%;
+  height: 100%;
+  top: 100%;
+  left: 0;
+  background-color: var(--six-color);
+  transition: top 1s;
+}
+.portfolio .item:hover .layout {
+  top: 0;
+}
+.portfolio a {
+  color: var(--third-color);
+  padding: 8px 16px;
+  background-color: var(--forth-color);
+}
+/* end portfolio */
+/* start about */
+.about a {
+  color: var(--third-color);
+  padding: 8px 16px;
+  background-color: var(--forth-color);
+}
+.about h4 {
+  color: var(--seven-color);
+  font-size: 24px;
+  line-height: 28.8px;
+  margin: 0px 0px 8px;
+  font-weight: 500;
+}
+.about p {
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 24px;
+  margin: 0px 0px 16px;
+}
+/* end about */
+/* start contact */
+.contact {
+  background-color: #eff7fa;
+}
+.contact h4 {
+  background-color: var(--six-color);
+  color: var(--second-color);
+  font-size: 24px;
+  line-height: 28.8px;
+  margin: 0px 0px 8px;
+  padding: 16px;
+  font-weight: 500;
+}
+.contact blockquote {
+  color: rgba(0, 0, 0, 0.5);
+  margin: 0px 0px 16px;
+  padding: 16px;
+}
+/* end contact */
+/* start tech */
+.tech {
+  height: 200px;
+}
+/* end tech */
+/* start project */
+.project {
+  height: 300px;
+  background-color: var(--main-color);
+}
+.project a {
+  color: var(--third-color);
+  padding: 8px 16px;
+  background-color: var(--forth-color);
+}
+.project h2 {
+  color: var(--second-color);
+  font-size: 32px;
+  line-height: 38.4px;
+  margin: 0px 0px 8px;
+  font-weight: 500;
+}
+.project p {
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 24px;
+  margin: 0px 0px 30px;
+}
+/* end project */
+/* start blog */
+.blog p {
+  color: rgba(0, 0, 0, 0.5);
+}
+.blog h5 {
+  color: var(--seven-color);
+  font-size: 20px;
+  margin: 0px 0px 8px;
+  font-weight: 500;
+}
+.blog a {
+  color: var(--third-color);
+  padding: 8px 16px;
+  background-color: var(--forth-color);
+}
+/* end blog */
+/* start Subscribe  */
+.subscribe {
+  height: 150px;
+  background-color: var(--third-color);
+}
+.subscribe a {
+  color: var(--third-color);
+  padding: 8px 16px;
+  background-color: var(--forth-color);
+}
+.subscribe p {
+  color: var(--seven-color);
+  font-size: 20px;
+  line-height: 30px;
+  margin: 0px 0px 16px;
+  font-weight: 700;
+}
+/* end Subscribe  */
+/* start footer */
+footer {
+  background-color: var(--main-color);
+}
+footer .card1 img {
+  margin: 0px 0px 24px;
+}
+footer .card1 .first {
+  color: RGBA(255, 255, 255, 0.5);
+  margin: 0px 0px 48px;
+}
+footer .card1 .second,
+.third {
+  color: rgba(255, 255, 255, 0.5);
+}
+footer .card1 .second span {
+  color: var(--six-color);
+}
+footer .card1 .third span {
+  color: var(--third-color);
+}
+footer .card2 h5 {
+  color: var(--second-color);
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0px 0px 8px;
+  font-weight: 500;
+}
+footer .card2 p {
+  color: RGBA(255, 255, 255, 0.5);
+  line-height: 32px;
+}
+footer .card2 a {
+  color: var(--third-color);
+  padding: 8px 16px;
+  background-color: var(--forth-color);
+}
+
+footer .icons .icon {
+  background-color: RGB(24, 119, 242);
+  color: #ffffff;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 20px;
+}
+
+/* end footer */
