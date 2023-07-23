@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/mediaquery.css" />
+    <title>CRUD</title>
+  </head>
+  <body>
+    <div class="container my-3 shadow-lg p-3">
+      <h1>CRUD System</h1>
+      <p>Product Name:</p>
+      <input
+        id="productName"
+        type="text"
+        class="form-control mb-3"
+        placeholder="Enter Product Name:"
+      />
+      <p>Product Price:</p>
+      <input
+        id="productPrice"
+        type="number"
+        class="form-control mb-3"
+        placeholder="Enter Product Price:"
+      />
+      <p>Product Description:</p>
+      <textarea
+        id="productDescription"
+        cols="30"
+        rows="3"
+        class="form-control"
+        placeholder="Enter Product Description:"
+      ></textarea>
+      <button
+        onclick="addProduct()"
+        class="btn btn-outline-info my-3 d-block"
+        id="addButton"
+      >
+        Add Product
+      </button>
+      <button
+        onclick="updateProduct()"
+        class="btn btn-outline-info my-3 d-none"
+        id="updateButton"
+      >
+        Update Product
+      </button>
+      <input
+        id="search"
+        onkeyup="search(this.value)"
+        type="text"
+        class="form-control mb-3 w-50 m-auto"
+        placeholder="Search..."
+      />
+    </div>
+    <div class="container shadow py-3">
+      <table class="table table-hover text-center">
+        <thead>
+          <th>Index</th>
+          <th>Product Name</th>
+          <th>Product Price</th>
+          <th>Product Description</th>
+          <th>Actions</th>
+        </thead>
+        <tbody id="adding"></tbody>
+      </table>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
