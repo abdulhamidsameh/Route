@@ -1,0 +1,18 @@
+body {
+  background-image: linear-gradient(to right, #e22865, #37adcd);
+  color: white;
+  font-family: "Fredoka One", cursive;
+}
+.header-container {
+  width: 95%;
+  margin: auto;
+}
+.home-item {
+  transition: all 1s;
+  border: solid 1px gray;
+}
+.home-item:hover {
+  cursor: pointer;
+  box-shadow: 0 0 20px #e22865;
+  border: 1px solid #e22865;
+}
