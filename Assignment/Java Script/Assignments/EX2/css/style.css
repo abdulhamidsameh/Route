@@ -1,0 +1,38 @@
+.title {
+  bottom: 10%;
+  left: 10%;
+  right: 10%;
+}
+#imageContainer {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.imageTitle {
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  width: 50%;
+  height: 300px;
+  padding: 10px;
+}
+#close {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+i {
+  font-size: 20px;
+  cursor: pointer;
+}
+img {
+  cursor: pointer;
+}
