@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/mediaquery.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Login</title>
+  </head>
+  <body>
+    <nav id="nav" class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand text-decoration-none" href="#">SMART LOGIN </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+
+          <button id="LogoutBtn" class="btn btn-outline-success" type="submit">
+            Logout
+          </button>
+        </div>
+      </div>
+    </nav>
+    <section
+      class="min-vh-100 d-flex justify-content-center align-items-center"
+    >
+      <p id="welcome"></p>
+      <div class="login" id="loginDiv">
+        <h1>Smart Login System</h1>
+
+        <input
+          id="email"
+          class="form-control"
+          type="email"
+          placeholder="Enter your email"
+        />
+        <input
+          id="password"
+          class="form-control"
+          type="password"
+          placeholder="Enter your password"
+        />
+        <button id="enter" class="form-control btn btn-outline-info">
+          Login
+        </button>
+        <p class="text-center">
+          Don’t have an account?<a id="linkSignUp"> Sign Up</a>
+        </p>
+      </div>
+      <div id="signUp" class="signUp">
+        <h1>Smart Login System</h1>
+        <input
+          id="signUpName"
+          class="form-control"
+          type="text"
+          placeholder="Enter your name"
+        />
+        <input
+          id="signUpEmail"
+          class="form-control"
+          type="email"
+          placeholder="Enter your email"
+        />
+        <input
+          id="signUpPassword"
+          class="form-control"
+          type="password"
+          placeholder="Enter your password"
+        />
+        <button id="add" class="form-control btn btn-outline-info">
+          Sign Up
+        </button>
+        <p class="text-center">
+          You have an account?<a id="linkSignIn"> Sign in</a>
+        </p>
+      </div>
+    </section>
+
+    <script src="js/main.js"></script>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
