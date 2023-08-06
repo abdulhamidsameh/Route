@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/mediaquery.css" />
+    <title>Weather</title>
+  </head>
+  <body>
+    <div class="body">
+      <div class="container">
+        <input id="city" class="form-control my-3" type="text" />
+        <div class="row text-white">
+          <div class="item col-md-4 item2">
+            <div id="day1">
+              <div class="date text-center"></div>
+              <div class="currentCity p-3"></div>
+              <div
+                class="py-5 d-flex justify-content-around align-items-center"
+              >
+                <div class="temp fa-2x"></div>
+                <img class="icon" src="" width="50" alt="" />
+              </div>
+              <div class="condition"></div>
+              <div class="d-flex justify-content-around align-items-center">
+                <span
+                  ><img
+                    src="img/icon-umberella@2x.png"
+                    width="20"
+                    alt=""
+                  />20%</span
+                >
+                <span
+                  ><img
+                    src="img/icon-wind@2x.png"
+                    width="20"
+                    alt=""
+                  />18km/h</span
+                >
+                <span
+                  ><img
+                    src="img/icon-compass@2x.png"
+                    width="20"
+                    alt=""
+                  />East</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="item text-center col-md-4">
+            <div id="day2">
+              <div class="day m-1"></div>
+              <img class="icon my-3" src="" alt="" />
+              <div class="temp fa-2x my-2"></div>
+              <div class="temp2"></div>
+              <div class="condition my-4"></div>
+            </div>
+          </div>
+          <div class="item text-center col-md-4 item2">
+            <div id="day3">
+              <div class="day m-1"></div>
+              <img class="icon my-3" src="" alt="" />
+              <div class="temp fa-2x my-2"></div>
+              <div class="temp2"></div>
+              <div class="condition my-4"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
