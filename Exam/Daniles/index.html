@@ -14,6 +14,7 @@
     <!-- Bootstrap File -->
     <link rel="stylesheet" href="CSS/bootstrap.min.css" />
     <!-- Normalize File Css -->
+    <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <!-- Main File Css -->
     <link rel="stylesheet" href="CSS/style.css" />
@@ -23,9 +24,36 @@
     <title>Daniels</title>
   </head>
   <body data-bs-spy="scroll" data-bs-target="#navbar-example">
+    <section id="spinner" class="">
+      <div class="lds-roller">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </section>
     <!-- Start Navbar -->
+    <div class="box d-flex">
+      <div class="box-color">
+        <h6>Choose Your Color Theme</h6>
+        <div class="colors d-flex gap-2">
+          <div class="red"></div>
+          <div class="green"></div>
+          <div class="blue"></div>
+          <div class="black"></div>
+          <div class="yellow"></div>
+        </div>
+      </div>
+      <div class="icon">
+        <i id="close" class="fa-solid fa-gear"></i>
+      </div>
+    </div>
     <nav
-      class="navbar navbar-expand-lg fixed-top bg-white shadow-sm"
+      class="navbar navbar-expand-lg fixed-top shadow-sm"
       id="navbar-example"
     >
       <div class="container">
@@ -88,14 +116,15 @@
       </div>
     </nav>
     <!-- End Navbar -->
+
     <!-- Start Home Section -->
     <header class="home vh-100" id="home">
       <div
         class="overlay vh-100 d-flex align-items-center justify-content-center text-center"
       >
         <div class="title text-white">
-          <h5>Hello</h5>
-          <h1><span>I Am </span></h1>
+          <h5 class="wow bounceInDown">Hello</h5>
+          <h1><span class="element">I Am </span></h1>
           <div
             class="icons d-flex gap-3 align-items-center justify-content-center"
           >
@@ -110,17 +139,20 @@
         </div>
       </div>
     </header>
+    <button id="btnUp" class="btn rounded-circle text-white">
+      <i class="fas fa-arrow-alt-circle-up"></i>
+    </button>
     <!-- End Home Section -->
     <!-- Start About -->
     <section class="about my-5" id="about">
       <div class="container py-5">
         <div class="row">
-          <div class="col-md-5">
+          <div class="col-md-5 wow bounceInLeft">
             <div class="hero-section position-relative">
               <img src="imgs/hero.jpg" alt="" />
             </div>
           </div>
-          <div class="col-md-7">
+          <div class="col-md-7 wow bounceInRight">
             <div class="description">
               <h3>About Me.</h3>
               <span>UI / UX DESIGNER & WEB DEVELOPER</span>
@@ -197,7 +229,7 @@
           <h3>Services.</h3>
         </div>
         <div class="row mt-5">
-          <div class="col-lg-4">
+          <div class="col-lg-4 wow bounceInLeft">
             <div class="card text-center">
               <span><i class="fa-solid fa-laptop"></i></span>
               <h6>Web Design</h6>
@@ -207,7 +239,7 @@
               </p>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 wow bounceInDown">
             <div class="card text-center">
               <span><i class="fa-solid fa-bullhorn"></i></span>
               <h6>Branding</h6>
@@ -217,7 +249,7 @@
               </p>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 wow bounceInRight">
             <div class="card text-center">
               <span><i class="fa-solid fa-umbrella"></i></span>
               <h6>Development</h6>
@@ -227,7 +259,7 @@
               </p>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 wow bounceInLeft">
             <div class="card text-center">
               <span><i class="fa-regular fa-gem"></i></span>
               <h6>Creative Design</h6>
@@ -237,7 +269,7 @@
               </p>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 wow bounceInUp">
             <div class="card text-center">
               <span><i class="fa-solid fa-tv"></i></span>
               <h6>Fully Responsive</h6>
@@ -247,7 +279,7 @@
               </p>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 wow bounceInRight">
             <div class="card text-center">
               <span><i class="fa-solid fa-camera"></i></span>
               <h6>Retina Ready</h6>
@@ -882,6 +914,9 @@
       <p>Copy Right 2018 © By Daniels All Rights Reserved</p>
     </footer>
     <!-- End Footer -->
+    <script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="js/main.js"></script>
     <script src="JS/bootstrap.bundle.min.js"></script>
   </body>

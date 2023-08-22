@@ -10,10 +10,110 @@
 /* Start Global Style */
 body {
   scroll-behavior: smooth;
+  overflow: hidden;
 }
 html {
   scroll-padding-top: 62px;
 }
+#spinner {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #999999;
+  z-index: 999999999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lds-roller {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px;
+}
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #fff;
+  margin: -4px 0 0 -4px;
+}
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+.lds-roller div:nth-child(1):after {
+  top: 63px;
+  left: 63px;
+}
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+  top: 68px;
+  left: 56px;
+}
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+  top: 71px;
+  left: 48px;
+}
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+  top: 72px;
+  left: 40px;
+}
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+  top: 71px;
+  left: 32px;
+}
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+  top: 68px;
+  left: 24px;
+}
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+  top: 63px;
+  left: 17px;
+}
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+  top: 56px;
+  left: 12px;
+}
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .section-head h3 {
   position: relative;
   font-family: var(--first-font);
@@ -55,7 +155,10 @@ nav a.active {
   position: relative;
   border-bottom: solid 2px #000;
 }
-
+.navbar {
+  background-color: #fff;
+  transition: background-color 1s;
+}
 /* End Navbar */
 /* Start Header Section */
 .home {
@@ -95,237 +198,276 @@ nav a.active {
   font-size: 14px;
   line-height: 14px;
 }
-.home .overlay .title h1::after {
-  content: "|";
-  animation-name: typing;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  font-size: 60px;
-  line-height: 72px;
+/* .home .overlay .title h1::after { */
+/* content: "|"; */
+/* animation-name: typing; */
+/* animation-duration: 10s; */
+/* animation-iteration-count: infinite; */
+/* font-size: 60px; */
+/* line-height: 72px; */
+/* } */
+.active {
+  color: #000 !important;
 }
-@keyframes typing {
-  0% {
-    content: "D|";
-  }
-  1.5% {
-    content: "De|";
-  }
-  3% {
-    content: "Des|";
-  }
-  4.5% {
-    content: "Desi|";
-  }
-  6% {
-    content: "Desig|";
-  }
-  7.5% {
-    content: "Design|";
-  }
-  9% {
-    content: "Designe|";
-  }
-  10.5% {
-    content: "Designer|";
-  }
-  12% {
-    content: "Designe|";
-  }
-  13.5% {
-    content: "Design|";
-  }
-  15% {
-    content: "Desig|";
-  }
-  16.5% {
-    content: "Desi|";
-  }
-  18% {
-    content: "Des|";
-  }
-  19.5% {
-    content: "De|";
-  }
-  21% {
-    content: "Dev|";
-  }
-  22.5% {
-    content: "Deve|";
-  }
-  24% {
-    content: "Devel|";
-  }
-  25.5% {
-    content: "Develo|";
-  }
-  27% {
-    content: "Develop|";
-  }
-  28.5% {
-    content: "Develope|";
-  }
-  30% {
-    content: "Developer|";
-  }
-  31.5% {
-    content: "Develope|";
-  }
-  33% {
-    content: "Develop|";
-  }
-  34.5% {
-    content: "Develo|";
-  }
-  36% {
-    content: "Devel|";
-  }
-  37.5% {
-    content: "Deve|";
-  }
-  39% {
-    content: "Dev|";
-  }
-  40.5% {
-    content: "De|";
-  }
-  42% {
-    content: "D|";
-  }
-  43.5% {
-    content: "|";
-  }
-  45% {
-    content: "L|";
-  }
-  46.5% {
-    content: "La|";
-  }
-  48% {
-    content: "Lar|";
-  }
-  49.5% {
-    content: "Larr|";
-  }
-  51% {
-    content: "Larry|";
-  }
-  52.5% {
-    content: "Larry |";
-  }
-  54% {
-    content: "Larry D|";
-  }
-  55.5% {
-    content: "Larry Da|";
-  }
-  57% {
-    content: "Larry Dan|";
-  }
-  58.5% {
-    content: "Larry Dani|";
-  }
-  60% {
-    content: "Larry Danie|";
-  }
-  61.5% {
-    content: "Larry Daniel|";
-  }
-  63% {
-    content: "Larry Daniels|";
-  }
-  64.5% {
-    content: "Larry Daniel|";
-  }
-  66% {
-    content: "Larry Danie|";
-  }
-
-  67.5% {
-    content: "Larry Dani|";
-  }
-  69% {
-    content: "Larry Dan|";
-  }
-  70.5% {
-    content: "Larry Da|";
-  }
-
-  72% {
-    content: "Larry D|";
-  }
-  73.5% {
-    content: "Larry |";
-  }
-  75% {
-    content: "Larry|";
-  }
-  76.5% {
-    content: "Larr|";
-  }
-  78% {
-    content: "Lar|";
-  }
-  79.5% {
-    content: "La|";
-  }
-  81% {
-    content: "L|";
-  }
-  82.5% {
-    content: "|";
-  }
-  84% {
-    content: "C|";
-  }
-  85.5% {
-    content: "Cr|";
-  }
-  87% {
-    content: "Cre|";
-  }
-  88.5% {
-    content: "Crea|";
-  }
-  90% {
-    content: "Creat|";
-  }
-  91% {
-    content: "Creati|";
-  }
-  92% {
-    content: "Creativ|";
-  }
-  93% {
-    content: "Creative|";
-  }
-  94% {
-    content: "Creativ|";
-  }
-  95% {
-    content: "Creati|";
-  }
-  96% {
-    content: "Creat|";
-  }
-  97% {
-    content: "Crea|";
-  }
-  98% {
-    content: "Cre|";
-  }
-  98.5% {
-    content: "Cr|";
-  }
-  99% {
-    content: "C|";
-  }
-  99.5% {
-    content: "|";
-  }
-  100% {
-    content: "|";
-  }
+.box {
+  position: fixed;
+  top: 150px;
+  color: #fff;
+  z-index: 99999;
+  background-color: #1c1c1c;
 }
+
+.box .colors div {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  padding: 10px;
+}
+.box .colors div:nth-child(1) {
+  background-color: red;
+}
+.box .colors div:nth-child(2) {
+  background-color: green;
+}
+.box .colors div:nth-child(3) {
+  background-color: blue;
+}
+.box .colors div:nth-child(4) {
+  background-color: black;
+}
+.box .colors div:nth-child(5) {
+  background-color: yellow;
+}
+.box .icon {
+  padding: 10px;
+}
+.box i {
+  font-size: 24px;
+  cursor: pointer;
+}
+/* @keyframes typing { */
+/* 0% { */
+/* content: "D|"; */
+/* } */
+/* 1.5% { */
+/* content: "De|"; */
+/* } */
+/* 3% { */
+/* content: "Des|"; */
+/* } */
+/* 4.5% { */
+/* content: "Desi|"; */
+/* } */
+/* 6% { */
+/* content: "Desig|"; */
+/* } */
+/* 7.5% { */
+/* content: "Design|"; */
+/* } */
+/* 9% { */
+/* content: "Designe|"; */
+/* } */
+/* 10.5% { */
+/* content: "Designer|"; */
+/* } */
+/* 12% { */
+/* content: "Designe|"; */
+/* } */
+/* 13.5% { */
+/* content: "Design|"; */
+/* } */
+/* 15% { */
+/* content: "Desig|"; */
+/* } */
+/* 16.5% { */
+/* content: "Desi|"; */
+/* } */
+/* 18% { */
+/* content: "Des|"; */
+/* } */
+/* 19.5% { */
+/* content: "De|"; */
+/* } */
+/* 21% { */
+/* content: "Dev|"; */
+/* } */
+/* 22.5% { */
+/* content: "Deve|"; */
+/* } */
+/* 24% { */
+/* content: "Devel|"; */
+/* } */
+/* 25.5% { */
+/* content: "Develo|"; */
+/* } */
+/* 27% { */
+/* content: "Develop|"; */
+/* } */
+/* 28.5% { */
+/* content: "Develope|"; */
+/* } */
+/* 30% { */
+/* content: "Developer|"; */
+/* } */
+/* 31.5% { */
+/* content: "Develope|"; */
+/* } */
+/* 33% { */
+/* content: "Develop|"; */
+/* } */
+/* 34.5% { */
+/* content: "Develo|"; */
+/* } */
+/* 36% { */
+/* content: "Devel|"; */
+/* } */
+/* 37.5% { */
+/* content: "Deve|"; */
+/* } */
+/* 39% { */
+/* content: "Dev|"; */
+/* } */
+/* 40.5% { */
+/* content: "De|"; */
+/* } */
+/* 42% { */
+/* content: "D|"; */
+/* } */
+/* 43.5% { */
+/* content: "|"; */
+/* } */
+/* 45% { */
+/* content: "L|"; */
+/* } */
+/* 46.5% { */
+/* content: "La|"; */
+/* } */
+/* 48% { */
+/* content: "Lar|"; */
+/* } */
+/* 49.5% { */
+/* content: "Larr|"; */
+/* } */
+/* 51% { */
+/* content: "Larry|"; */
+/* } */
+/* 52.5% { */
+/* content: "Larry |"; */
+/* } */
+/* 54% { */
+/* content: "Larry D|"; */
+/* } */
+/* 55.5% { */
+/* content: "Larry Da|"; */
+/* } */
+/* 57% { */
+/* content: "Larry Dan|"; */
+/* } */
+/* 58.5% { */
+/* content: "Larry Dani|"; */
+/* } */
+/* 60% { */
+/* content: "Larry Danie|"; */
+/* } */
+/* 61.5% { */
+/* content: "Larry Daniel|"; */
+/* } */
+/* 63% { */
+/* content: "Larry Daniels|"; */
+/* } */
+/* 64.5% { */
+/* content: "Larry Daniel|"; */
+/* } */
+/* 66% { */
+/* content: "Larry Danie|"; */
+/* } */
+/*  */
+/* 67.5% { */
+/* content: "Larry Dani|"; */
+/* } */
+/* 69% { */
+/* content: "Larry Dan|"; */
+/* } */
+/* 70.5% { */
+/* content: "Larry Da|"; */
+/* } */
+/*  */
+/* 72% { */
+/* content: "Larry D|"; */
+/* } */
+/* 73.5% { */
+/* content: "Larry |"; */
+/* } */
+/* 75% { */
+/* content: "Larry|"; */
+/* } */
+/* 76.5% { */
+/* content: "Larr|"; */
+/* } */
+/* 78% { */
+/* content: "Lar|"; */
+/* } */
+/* 79.5% { */
+/* content: "La|"; */
+/* } */
+/* 81% { */
+/* content: "L|"; */
+/* } */
+/* 82.5% { */
+/* content: "|"; */
+/* } */
+/* 84% { */
+/* content: "C|"; */
+/* } */
+/* 85.5% { */
+/* content: "Cr|"; */
+/* } */
+/* 87% { */
+/* content: "Cre|"; */
+/* } */
+/* 88.5% { */
+/* content: "Crea|"; */
+/* } */
+/* 90% { */
+/* content: "Creat|"; */
+/* } */
+/* 91% { */
+/* content: "Creati|"; */
+/* } */
+/* 92% { */
+/* content: "Creativ|"; */
+/* } */
+/* 93% { */
+/* content: "Creative|"; */
+/* } */
+/* 94% { */
+/* content: "Creativ|"; */
+/* } */
+/* 95% { */
+/* content: "Creati|"; */
+/* } */
+/* 96% { */
+/* content: "Creat|"; */
+/* } */
+/* 97% { */
+/* content: "Crea|"; */
+/* } */
+/* 98% { */
+/* content: "Cre|"; */
+/* } */
+/* 98.5% { */
+/* content: "Cr|"; */
+/* } */
+/* 99% { */
+/* content: "C|"; */
+/* } */
+/* 99.5% { */
+/* content: "|"; */
+/* } */
+/* 100% { */
+/* content: "|"; */
+/* } */
+/* } */
 /* End Header Section */
 /* Start About */
 .about .hero-section {
@@ -724,3 +866,11 @@ footer p {
   word-spacing: 2px;
 }
 /* End Footer */
+#btnUp {
+  background-color: var(--second-color);
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  display: none;
+  z-index: 999999;
+}
