@@ -1,0 +1,134 @@
+.home {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/events-heavenly-header.jpg);
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+.home .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(214, 46, 51, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+}
+.home .overlay h2 {
+  font-size: 60px;
+  line-height: 72px;
+  font-weight: 500;
+}
+.nav {
+  display: flex;
+  height: 100vh;
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+}
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+}
+nav i {
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
+.nav .nav-item {
+  background-color: #000;
+  padding: 30px;
+}
+.nav-item a {
+  transition: color 0.7s;
+}
+.nav-item a:hover {
+  color: #d62e33;
+}
+.open-icon {
+  margin-top: 100px;
+  padding: 20px;
+}
+#duration div {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+#duration div h3 {
+  color: #ffffff;
+  background-color: #d62e33;
+  font-size: 28px;
+  line-height: 33.6px;
+  padding: 10px;
+  font-weight: 500;
+  margin: 0;
+}
+#duration div p {
+  color: #212529;
+  background-color: #cccccc;
+  padding: 10px;
+  margin: 0;
+}
+#details {
+  background-image: url(../img/invitation-2508607__340.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  position: relative;
+  height: 360px;
+}
+#details .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background-color: rgba(214, 46, 51, 0.6);
+  color: white;
+}
+#details .item {
+  border: #fff 1px solid;
+  width: 160px;
+  height: 160px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+.icons {
+  display: flex;
+}
+
+.icons .icon {
+  border: 1px solid #000;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  transition: color 0.7s, background-color 0.7s;
+}
+.icons .icon:hover {
+  background-color: #d62e33;
+  color: #fff;
+}
+textarea {
+  width: 100%;
+  resize: none;
+  height: 250px;
+}
+button {
+  background-color: #d62e33 !important;
+  color: #fff !important;
+  padding: 10px;
+}
