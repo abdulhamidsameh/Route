@@ -1,0 +1,152 @@
+body {
+  background-color: #000;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+i {
+  cursor: pointer;
+}
+.home .item,
+.search .item,
+.categories .item,
+.area .item,
+.ingredients .item {
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.home .row .item .landing,
+.search .row .item .landing,
+.categories .row .item .landing,
+.area .row .item .landing,
+.ingredients .row .item .landing {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.69);
+  transition: top 1s;
+}
+.home .row img,
+.search .row img,
+.categories .row img,
+.area .row img,
+.ingredients .row img {
+  cursor: pointer;
+}
+.home .row .item:hover .landing,
+.search .row .item:hover .landing,
+.categories .row .item:hover .landing,
+.area .row .item:hover .landing,
+.ingredients .row .item:hover .landing {
+  top: 0;
+}
+.side-bar .icon img {
+  width: 25px;
+}
+.side-bar {
+  background-color: #fff;
+  height: 100%;
+  position: fixed;
+  display: flex;
+  margin: 0;
+  z-index: 222;
+  top: 0;
+  left: 0;
+}
+.side-bar .icon {
+  display: flex;
+  justify-content: space-around;
+  gap: 100px;
+  align-items: center;
+  flex-direction: column;
+  width: 50px;
+}
+.side-bar .icon .links {
+  display: flex;
+  flex-direction: column;
+}
+.side-bar .navbar .links {
+  display: flex;
+  flex-direction: column;
+}
+.side-bar .navbar .links a {
+  cursor: pointer;
+  position: absolute;
+  top: 100%;
+}
+.side-bar .navbar {
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  color: #fff;
+  width: 200px;
+  position: relative;
+}
+.search .inputs {
+  display: flex;
+  justify-content: space-evenly;
+}
+.search .inputs input {
+  width: 40%;
+}
+.search {
+  display: none;
+}
+.categories {
+  display: none;
+}
+.meal {
+  color: #fff;
+  display: none;
+}
+.meal li {
+  display: inline-block;
+  width: 200px;
+}
+.area {
+  color: #fff;
+  font-size: 30px;
+  display: none;
+  text-align: center;
+}
+.area .col-md-3 h5 {
+  cursor: pointer;
+  padding: 20px;
+}
+.ingredients {
+  color: #fff;
+  font-size: 16px;
+  display: none;
+  text-align: center;
+}
+.ingredients .col-md-3 {
+  cursor: pointer;
+}
+.contact p {
+  color: #fff;
+}
+.repass,
+.pass,
+.name,
+.email,
+.phone,
+.age {
+  background-color: var(--bs-warning-text-emphasis);
+  text-align: center;
+  min-height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.contact {
+  display: none;
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/mediaquery.css" />
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+    <title>Yummy</title>
+  </head>
+  <body>
+    <div class="side-bar">
+      <div class="navbar">
+        <div class="links">
+          <a id="search">Search </a>
+          <a id="category">Categories</a>
+          <a id="area">Area</a>
+          <a id="ingredients">Ingredients</a>
+          <a id="contact">Contact Us</a>
+        </div>
+        <div class="footer">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-solid fa-globe"></i>
+          <p>Copyright Â© 2023 All Rights Reserved.</p>
+        </div>
+      </div>
+      <div class="icon">
+        <img src="img/logo.png" alt="" />
+        <i id="close" class="fa-solid fa-bars"></i>
+        <div class="links">
+          <i class="fa-solid fa-globe"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+    </div>
+
+    <section class="home m-4">
+      <div class="container">
+        <div class="row g-4"></div>
+      </div>
+    </section>
+    <section class="search m-4">
+      <div class="inputs">
+        <input
+          type="text"
+          class="form-control"
+          id="searchName"
+          placeholder="Search by name"
+        />
+        <input
+          type="text"
+          class="form-control"
+          id="searchLetter"
+          placeholder="Search by First Letter"
+          maxlength="1"
+        />
+      </div>
+      <div class="container m-4">
+        <div class="row g-4"></div>
+      </div>
+    </section>
+    <section class="categories m-4">
+      <div class="container">
+        <div class="row g-4"></div>
+      </div>
+    </section>
+    <section class="meal m-4">
+      <div class="container">
+        <div class="row g-4"></div>
+      </div>
+    </section>
+    <section class="area m-4">
+      <div class="container">
+        <div class="row g-4"></div>
+      </div>
+    </section>
+    <section class="ingredients m-4">
+      <div class="container">
+        <div class="row g-4"></div>
+      </div>
+    </section>
+    <section class="contact m-4">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="item">
+              <input
+                id="name"
+                type="text"
+                placeholder="Enter Your Name"
+                class="form-control"
+              />
+              <div class="name">
+                <p>Special characters and numbers not allowed</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="item">
+              <input
+                id="email"
+                type="email"
+                placeholder="Enter Your Email"
+                class="form-control"
+              />
+              <div class="email">
+                <p>Email not valid *exemple@yyy.zzz</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="item">
+              <input
+                id="phone"
+                type="tel"
+                placeholder="Enter Your Phone"
+                class="form-control"
+              />
+              <div class="phone">
+                <p>Enter valid Phone Number</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="item">
+              <input
+                id="age"
+                type="number"
+                placeholder="Enter Your Age"
+                class="form-control"
+              />
+              <div class="age">
+                <p>Enter valid age</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="item">
+              <input
+                id="pass"
+                type="password"
+                placeholder="Enter Your Password"
+                class="form-control"
+              />
+              <div class="pass">
+                <p>
+                  Enter valid password *Minimum eight characters, at least one
+                  letter and one number:*
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="item">
+              <input
+                id="repass"
+                type="password"
+                placeholder="Repassword"
+                class="form-control"
+              />
+              <div class="repass">
+                <p>Enter valid repassword</p>
+              </div>
+            </div>
+          </div>
+          <div class="col md-12">
+            <button class="btn btn-danger">Submit</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
