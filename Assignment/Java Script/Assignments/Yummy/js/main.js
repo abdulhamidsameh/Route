@@ -22,6 +22,7 @@ reqMeal.onreadystatechange = function () {
     $(".side-bar").animate({ left: `-${navbarWidth}` });
     $(".home,.search,categories,.area,.contact").css("display", "none ");
     $(".meal").css("display", "block");
+
     displayMeal(targetMeal);
   });
 };
