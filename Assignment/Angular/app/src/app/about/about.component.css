@@ -1,0 +1,10 @@
+section {
+  background-color: #1abc9c;
+  color: #fff;
+  min-height: 600px;
+}
+.line {
+  width: 50px;
+  height: 2px;
+  background-color: #fff;
+}
